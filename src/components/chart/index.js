@@ -1,2 +1,2 @@
-import Chaart from '../chart';
-export default Chaart;
+import Chart from '../chart';
+export default Chart;

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import './chart.sass';
 
-export default class Chaart extends Component {
+export default class Chart extends Component {
     render() {
         return (
             <div id="chart">
                 <h1>Коммиты</h1>
-                <p>Спринт № 213</p>   
+                <p>Спринт № 213</p>    
 
                 <div className="columns">
                     <div className="column first">
