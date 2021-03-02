@@ -1,0 +1,128 @@
+#chart
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+
+    .columns
+        display: flex
+        justify-content: space-evenly
+        .column
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            .col 
+                display: flex
+                align-items: flex-end   
+                ._col
+                    background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%) 
+            .num, .date
+                color: #BFBFBF
+    
+    .users
+        display: flex
+        justify-content: space-around 
+        height: 20%
+        .user
+            .pic
+                background-size: cover
+                background-position: center
+    
+
+@media only screen and (min-width: 321px)
+    /* horizontal */
+    #chart h1
+        font-size: 26px
+        margin: 0 auto
+    #chart p
+        font-size: 18px
+        margin: 0 auto
+        color: #BFBFBF
+
+    .columns
+        width: 95%
+        height: 206px /* 70% - 24px */
+        margin: 1rem 1.5rem 0 1.5rem
+        .column
+            .num
+                color: #BFBFBF
+            .col
+                width: 40px
+                height: 150px
+                ._col
+                    width: 40px 
+        .first
+            .col
+                ._col
+                    height: 85px
+        .second
+            .col
+                ._col
+                    height: 115px
+        .third
+            .col
+                ._col
+                    height: 110px
+        .four
+            .col
+                ._col
+                    height: 98px
+        .five
+            .col
+                ._col
+                    height: 116px
+        .six
+            .col
+                ._col
+                    height: 90px
+        .seven
+            .black
+                color: #261C00
+                font-size: 18px
+            .col
+                .gold
+                    width: 40px 
+                    height: 132px
+                    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
+        .eight
+            .num
+                opacity: 0
+            .col
+                ._col
+                    height: 10px
+        .nine
+            .num
+                opacity: 0
+            .col
+                ._col
+                    height: 10px
+
+    
+    .users
+        width: 80%
+        margin: 0.5rem auto
+        .user
+            display: flex
+            justify-content: center
+            .pic
+                width: 36px
+                height: 36px
+                border-radius: 50%
+                margin-right: 0.5rem
+
+            .info_wrap
+                margin-left: 0.2rem
+                #name
+                    color: #261C00
+                #age
+                    color: #BFBFBF
+        
+        .first_user
+            margin-left: 1rem
+            .pic
+                background-image: url('../../img/img_leaders/3119ecea1e114df95ec64c5c43334c0b.jpeg')
+        .second_user
+            .pic
+                background-image: url('../../img/img_leaders/801d5013ae729a41bc1930fff970ad14.jpeg')
+
+    

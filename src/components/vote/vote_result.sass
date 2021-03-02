@@ -1,0 +1,248 @@
+#vote_result
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+
+    h1                   
+       width: 70%
+    p 
+       color: #BFBFBF
+       width: 70%
+    .winners 
+        display: flex
+        width: 95%
+
+        .winner_item 
+            flex-direction: column
+            height: auto
+            justify-content: flex-end
+
+            .wrapper
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                .emodji
+                    position: absolute
+                .pic
+                    position: relative
+                    background-position: center
+                    background-size: cover
+                    border-radius: 100px
+                #pic5
+                    background-image: url('../../img/vote_result/43061ee611b1c55700345d39a333dd4b.png')
+                #pic3
+                    background-image: url('../../img/vote_result/9d91a28ad1a2943661f7faccc5431012.jpeg')
+                #pic1
+                    background-image: url('../../img/vote_result/b673e929deea02c1dc2bded07564f8c1.png')
+                #pic2
+                    background-image: url('../../img/vote_result/175323d766149861adfb2ef4f9d90481.jpeg')
+                
+                p
+                    color: rgb(38, 28, 0, 1)
+                    text-align: center
+                    font-weight: 500
+                #votes
+                    color: #BFBFBF
+
+        #first
+            z-index: 1
+            .first_place
+                background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
+                #num1
+                    margin: 0 auto
+        #second
+            z-index: -5
+            .second_place
+                #num2
+                    margin-top: 0
+        #third
+            .third_place
+                #num3
+                    margin-top: 0
+                    margin-left: 0
+        #fifth
+            
+
+
+@media screen and (max-width: 320px)
+    /* vertical */
+    h1 
+       margin: 1rem 0 0 1rem
+    p 
+       margin-left: 1rem
+    .winners 
+        margin: 1rem 1.5rem 0 1.5rem
+        
+        .winner_item 
+            width: 33% /* 120px from clientWidth */
+            margin-bottom: 0
+            display: flex
+            
+            .wrapper 
+                width: 86.7% /* 104px from winner_item */
+                height: 162px /* 162px of width */
+
+                .emodji
+                    margin-top: -9rem
+                .pic
+                    margin: 1rem auto
+                    width: 80%  /* 17% for iphone8 */
+                    height: 40% /* 9.6% for iphone8 */
+                p
+                    width: 80%
+                    margin: -0.5rem auto
+                    text-align: center
+                    font-size: 14px
+                    margin-bottom: 0.5rem
+                #votes
+                    margin-bottom: 0.5rem
+
+            .win_place
+                display: flex
+                justify-content: flex-start
+                z-index: -1
+                #num3, #num1, #num2
+                    padding-top: 0.5rem
+
+        #first 
+            margin-left: -16px   /* 16px */
+            align-items: center
+            .first_place
+                height: 295px /* -30px test */
+        #second
+            margin-left: -16px  /* 16px */
+            .wrapper
+                margin-left: 11px   /* 16px */
+            .second_place
+                height: 245px
+                #num2
+                    margin-left: 13%
+        #third
+            .wrapper
+                margin-left: -0.2rem
+                p
+                    text-align: center
+                    margin-left: 0
+            .third_place
+                height: 195px
+
+@media screen and (min-width: 322px) and (max-width: 415px)
+    /* vertical */
+    h1 
+        margin: 1rem 0 0 1rem
+        width: 80% /* !important */
+    p 
+        margin-top: 0.5rem
+        margin-left: 1rem
+
+    .winners 
+        margin: 3rem 1rem 0 1rem
+        
+        .winner_item 
+            width: 36% /* 155px from clientWidth */
+            margin-bottom: 0
+            display: flex
+
+            .wrapper 
+                width: 86.7% /* 104px from winner_item */
+                height: 210px  /* 162px of width */
+
+                .emodji
+                    margin-top: -10rem
+                .pic
+                    margin: 1rem auto
+                    width: 70%  /* 17% for iphone8 */
+                    height: 40%  /* 9.6% for iphone8 */
+                p
+                    width: 80%
+                    margin: -0.5rem auto
+                    font-size: 16px
+                    margin-bottom: 0.5rem
+
+            .win_place
+                display: flex
+                justify-content: flex-start
+                z-index: -1
+                #num3, #num1, #num2
+                    padding-top: 1rem
+
+        #vote_result #first 
+            margin-left: -22px   
+            align-items: center
+            .first_place
+                height: 421px
+        #vote_result #second
+            margin-left: -22px  /* 16px */
+            .wrapper
+                margin-left: 22px   /* 16px */
+            .second_place
+                height: 356px
+                #num2
+                    margin-left: 13%
+        #vote_result #third
+            .third_place    
+                height: 292px
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+    /* vertical */
+    h1 
+        font-size: 48px /* !important */
+        width: 80% /* !important */
+        margin: 1rem 0 0.5rem 1.5rem
+    p
+        font-size: 32px /* !important */
+        margin-left: 1.5rem
+
+    #vote_result .winners
+        margin: 2rem 1.5rem 0 1.5rem
+
+        .winner_item 
+            width: 36% /* 288px 37.5% from clientWidth */
+            margin-bottom: -10px
+            display: flex
+
+            #vote_result .wrapper 
+                width: 86.7% /* 104px from winner_item */
+                height: 369px  /* 162px of width */
+
+                .emodji
+                    margin-top: -18rem
+                .pic
+                    margin: 1.5rem auto
+                    width: 70%  /* 17% for iphone8 */
+                    height: 40%  /* 9.6% for iphone8 */
+                p
+                    width: 80%
+                    margin: 0 auto
+                    font-size: 24px
+                    margin-bottom: 1.5rem
+                #votes
+                    font-size: 24px
+            
+            #vote_result .win_place
+                display: flex
+                justify-content: flex-start
+                z-index: -1
+                #num3, #num1, #num2
+                    padding-top: 1.5rem
+                    font-size: 24px
+
+        #vote_result #first 
+            margin-left: -30px   
+            align-items: center
+            .first_place
+                height: 536px /* -50px */
+        #vote_result #second
+            margin-left: -30px  /* 16px */
+            .wrapper
+                margin-left: 30px   /* 16px */
+            .second_place
+                height: 446px
+                #num2
+                    margin-left: 13%
+        #vote_result #third
+            .third_place    
+                height: 356px
+
