@@ -5,8 +5,8 @@ export default class Diagram extends Component {
     render() {
         return(
             <div id="diagram">
-                <h1>Размер коммитов</h1>
-                <p>Спринт № 213</p> 
+                <h1 id="diagram_h1">Размер коммитов</h1>
+                <p id="diagram_p">Спринт № 213</p> 
 
                 <div className="diagram">
                     <div className="out_circle">

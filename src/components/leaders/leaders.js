@@ -5,8 +5,8 @@ export default class Leaders extends Component {
     render() {
         return (
             <div id="leaders">
-                <h1>Больше всего ️коммитов</h1>
-                <p>Спринт № 213</p>
+                <h1 id="leaders_h1">Больше всего ️коммитов</h1>
+                <p id="leaders_p">Спринт № 213</p>
 
                 <div className="winners">
                     <div id="fifth" className="winner_item">

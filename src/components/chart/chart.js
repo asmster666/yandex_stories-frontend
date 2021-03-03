@@ -5,8 +5,8 @@ export default class Chart extends Component {
     render() {
         return (
             <div id="chart">
-                <h1>Коммиты</h1>
-                <p>Спринт № 213</p>    
+                <h1 id="chart_h1">Коммиты</h1>
+                <p id="chart_p">Спринт № 213</p>    
 
                 <div className="columns">
                     <div className="column first">

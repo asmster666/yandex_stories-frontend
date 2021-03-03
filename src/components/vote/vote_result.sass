@@ -4,11 +4,12 @@
     width: 100%
     height: 100%
 
-    h1                   
+    #vote_result_h1                   
        width: 70%
-    p 
+    #vote_result_p 
        color: #BFBFBF
        width: 70%
+
     .winners 
         display: flex
         width: 95%
@@ -55,41 +56,45 @@
         #second
             z-index: -5
             .second_place
+                background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
                 #num2
                     margin-top: 0
         #third
             .third_place
+                background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
                 #num3
                     margin-top: 0
-                    margin-left: 0
-        #fifth
+                    margin-left: 0 
             
 
 
 @media screen and (max-width: 320px)
     /* vertical */
-    h1 
-       margin: 1rem 0 0 1rem
-    p 
-       margin-left: 1rem
+    #vote_result_h1 
+        font-size: 26px
+        margin: 1rem 0 0 1rem
+    #vote_result_p 
+        font-size: 18px
+        margin-left: 1rem
+
     .winners 
         margin: 1rem 1.5rem 0 1.5rem
         
         .winner_item 
-            width: 33% /* 120px from clientWidth */
+            width: 33% 
             margin-bottom: 0
             display: flex
             
             .wrapper 
-                width: 86.7% /* 104px from winner_item */
-                height: 162px /* 162px of width */
+                width: 86.7% 
+                height: 162px 
 
                 .emodji
                     margin-top: -9rem
                 .pic
                     margin: 1rem auto
-                    width: 80%  /* 17% for iphone8 */
-                    height: 40% /* 9.6% for iphone8 */
+                    width: 80%  
+                    height: 40% 
                 p
                     width: 80%
                     margin: -0.5rem auto
@@ -97,26 +102,27 @@
                     font-size: 14px
                     margin-bottom: 0.5rem
                 #votes
-                    margin-bottom: 0.5rem
+                    margin-bottom: 0.5rem 
 
             .win_place
                 display: flex
                 justify-content: flex-start
+                width: 100%
                 z-index: -1
                 #num3, #num1, #num2
                     padding-top: 0.5rem
 
         #first 
-            margin-left: -16px   /* 16px */
+            margin-left: -16px   
             align-items: center
             .first_place
-                height: 295px /* -30px test */
+                height: 255px 
         #second
-            margin-left: -16px  /* 16px */
+            margin-left: -16px  
             .wrapper
-                margin-left: 11px   /* 16px */
+                margin-left: 11px  
             .second_place
-                height: 245px
+                height: 205px
                 #num2
                     margin-left: 13%
         #third
@@ -126,14 +132,14 @@
                     text-align: center
                     margin-left: 0
             .third_place
-                height: 195px
+                height: 155px
 
-@media screen and (min-width: 322px) and (max-width: 415px)
+@media screen and (min-width: 321px) and (max-width: 415px)
     /* vertical */
-    h1 
+    #vote_result_h1 
         margin: 1rem 0 0 1rem
-        width: 80% /* !important */
-    p 
+        width: 80% 
+    #vote_result_p 
         margin-top: 0.5rem
         margin-left: 1rem
 
@@ -141,20 +147,20 @@
         margin: 3rem 1rem 0 1rem
         
         .winner_item 
-            width: 36% /* 155px from clientWidth */
+            width: 36% 
             margin-bottom: 0
             display: flex
 
             .wrapper 
-                width: 86.7% /* 104px from winner_item */
-                height: 210px  /* 162px of width */
+                width: 86.7% 
+                height: 210px 
 
                 .emodji
                     margin-top: -10rem
                 .pic
                     margin: 1rem auto
-                    width: 70%  /* 17% for iphone8 */
-                    height: 40%  /* 9.6% for iphone8 */
+                    width: 70%  
+                    height: 40%  
                 p
                     width: 80%
                     margin: -0.5rem auto
@@ -174,9 +180,9 @@
             .first_place
                 height: 421px
         #vote_result #second
-            margin-left: -22px  /* 16px */
+            margin-left: -22px  
             .wrapper
-                margin-left: 22px   /* 16px */
+                margin-left: 22px   
             .second_place
                 height: 356px
                 #num2
@@ -187,32 +193,32 @@
 
 @media screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
     /* vertical */
-    h1 
-        font-size: 48px /* !important */
-        width: 80% /* !important */
+    #vote_result_h1 
+        font-size: 48px 
+        width: 80% 
         margin: 1rem 0 0.5rem 1.5rem
-    p
-        font-size: 32px /* !important */
+    #vote_result_p
+        font-size: 32px 
         margin-left: 1.5rem
 
     #vote_result .winners
         margin: 2rem 1.5rem 0 1.5rem
 
         .winner_item 
-            width: 36% /* 288px 37.5% from clientWidth */
+            width: 36% 
             margin-bottom: -10px
             display: flex
 
             #vote_result .wrapper 
-                width: 86.7% /* 104px from winner_item */
-                height: 369px  /* 162px of width */
+                width: 86.7% 
+                height: 369px  
 
                 .emodji
                     margin-top: -18rem
                 .pic
                     margin: 1.5rem auto
-                    width: 70%  /* 17% for iphone8 */
-                    height: 40%  /* 9.6% for iphone8 */
+                    width: 70%  
+                    height: 40%  
                 p
                     width: 80%
                     margin: 0 auto
@@ -233,11 +239,11 @@
             margin-left: -30px   
             align-items: center
             .first_place
-                height: 536px /* -50px */
+                height: 536px 
         #vote_result #second
-            margin-left: -30px  /* 16px */
+            margin-left: -30px  
             .wrapper
-                margin-left: 30px   /* 16px */
+                margin-left: 30px   
             .second_place
                 height: 446px
                 #num2

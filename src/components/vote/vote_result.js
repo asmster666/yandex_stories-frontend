@@ -5,8 +5,8 @@ export default class VoteResult extends Component {
     render() {
         return (
             <div id="vote_result">
-                <h1>Самый 🔎 внимательный разработчик</h1>
-                <p>Спринт № 213</p> 
+                <h1 id="vote_result_h1">Самый 🔎 внимательный разработчик</h1>
+                <p id="vote_result_p">Спринт № 213</p> 
 
                 <div className="winners">
                     <div id="fifth" className="winner_item">
@@ -18,7 +18,7 @@ export default class VoteResult extends Component {
                             <hr />
                             <div id="num5">5</div>
                         </div>
-                    </div>
+                     </div>
                     <div id="third" className="winner_item">
                         <div className="wrapper">
                             <div id="pic3" className="pic"></div>

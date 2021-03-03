@@ -5,8 +5,8 @@ export default class Vote extends Component {
     render() {
         return(
             <div id="vote">
-                <h1>Самый 🔎 внимательный разработчик</h1>
-                <p>Спринт № 213</p> 
+                <h1 id="vote_h1">Самый 🔎 внимательный разработчик</h1>
+                <p id="vote_p">Спринт № 213</p>   
 
                 <div className="coders">
                     <div className="first_column">
