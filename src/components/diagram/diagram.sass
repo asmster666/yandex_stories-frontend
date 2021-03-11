@@ -1,5 +1,5 @@
 :root
-    --theme: ""
+    --theme: "_dark"
     --num_of_color: 0
 
 #diagram    
@@ -34,63 +34,19 @@
             .first_piece
                 .color_cov, .round_part
                     clip-path: polygon(0% 50%, 50% 50%, 50% 0%, 0% 0%)
-                
-                .side_part_light1
-                    background-color: rgba(255, 184, 0, 0.56)
-                .round_part_light1
-                    border-color: rgba(255, 239, 153, 0.42)
 
             .second_piece
                 .color_cov, .round_part
                     clip-path: polygon(100% 50%, 50% 50%, 50% 0%, 100% 0%)
-                
-                .side_part_light2
-                    background: rgba(255, 184, 0, 0.24)
-                .round_part_light2
-                    border-color: rgba(255, 239, 153, 0.22)
 
             .third_piece
                 .color_cov, .round_part
                     clip-path: polygon(50% 100%, 50% 50%, 100% 50%, 100% 100%)
-                
-                .side_part_light3
-                    background-color: rgba(166, 166, 166, 0.3725)
-                .round_part_light3
-                    border-color: rgba(203, 203, 203, 0.1)
 
             .forth_piece
                 .color_cov, .round_part
                     clip-path: polygon(50% 100%, 50% 50%, 0% 50%, 0% 100%)
                 
-                .side_part_light4
-                    background-color: rgba(191, 191, 191, 0.445)
-                .round_part_light4
-                    border-color: rgba(228, 228, 228, 0.2)
-           
-    .class_color_light1
-        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
-    .class_color_dark1
-        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 163, 0, 0.8) 71.88%, rgba(91, 58, 0, 0.8) 100%)
-        box-shadow: 0px 0px 20px -8px rgba(248, 158, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 162, 0, 0.9)
-
-    .class_color_light2
-        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
-    .class_color_dark2
-        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(99, 63, 0, 0.5) 72.92%, rgba(15, 9, 0, 0.5) 100%)
-        box-shadow: 0px 0px 20px -8px rgba(147, 93, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(202, 129, 0, 0.9)
-
-    .class_color_light3
-        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
-    .class_color_dark3
-        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(155, 155, 155, 0.5) 71.88%, rgba(56, 41, 0, 0.5) 100%)
-        box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(139, 139, 139, 0.9)
-
-    .class_color_light4
-        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
-    .class_color_dark4
-        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(77, 77, 77, 0.5) 71.88%, rgba(56, 41, 0, 0.5) 100%)
-        box-shadow: 0px 0px 20px -8px rgba(96, 96, 96, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(38, 38, 38, 0.9)
-
         .white_circle
             background-color: white
             border-radius: 50%
@@ -116,7 +72,57 @@
             .count_wrap
                 display: flex
                 .counter 
-                    color: #BFBFBF  
+                    color: #BFBFBF
+
+.diagram_light 
+    background-color: white
+    .diagram
+        .out_circle          
+            .class_color1
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
+            .side_part1
+                background-color: rgba(255, 184, 0, 0.56)
+            .round_part1
+                border-color: rgba(255, 239, 153, 0.42)
+            
+            .class_color2
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
+            .side_part2
+                background: rgba(255, 184, 0, 0.24)
+            .round_part2
+                border-color: rgba(255, 239, 153, 0.22)
+            
+            .class_color3
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
+            .side_part3
+                background-color: rgba(166, 166, 166, 0.3725)
+            .round_part3
+                border-color: rgba(203, 203, 203, 0.1)
+            
+            .class_color4
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
+            .side_part4
+                background-color: rgba(191, 191, 191, 0.445)
+            .round_part4
+                border-color: rgba(228, 228, 228, 0.2)
+        
+        
+.diagram_dark
+    background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%)
+    .diagram
+        .out_circle
+            .class_color1
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 163, 0, 0.8) 71.88%, rgba(91, 58, 0, 0.8) 100%)
+                box-shadow: 0px 0px 20px -8px rgba(248, 158, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 162, 0, 0.9)
+            .class_color2
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(99, 63, 0, 0.5) 72.92%, rgba(15, 9, 0, 0.5) 100%)
+                box-shadow: 0px 0px 20px -8px rgba(147, 93, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(202, 129, 0, 0.9)
+            .class_color3
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(155, 155, 155, 0.5) 71.88%, rgba(56, 41, 0, 0.5) 100%)
+                box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(139, 139, 139, 0.9)
+            .class_color4
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(77, 77, 77, 0.5) 71.88%, rgba(56, 41, 0, 0.5) 100%)
+                box-shadow: 0px 0px 20px -8px rgba(96, 96, 96, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(38, 38, 38, 0.9)  
 
 
 @media screen and (max-width: 320px)

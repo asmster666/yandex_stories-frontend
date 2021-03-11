@@ -1,3 +1,10 @@
+:root 
+    --theme: "_dark"
+    --avatar: ""  /* link to img */
+    --name: ""
+    --valueText: "" /* how many commits (num) */
+    --id: 0   /* place, show of just first 5 */
+
 #leaders 
     margin: 0
     padding: 0
@@ -31,16 +38,6 @@
                     background-position: center
                     background-size: cover
                     border-radius: 100px
-                #pic5
-                    background-image: url('../../img/img_leaders/17d6614e1558f619ca961c1e74ee4e38.jpeg')
-                #pic3
-                    background-image: url('../../img/img_leaders/801d5013ae729a41bc1930fff970ad14.jpeg')
-                #pic1
-                    background-image: url('../../img/img_leaders/3119ecea1e114df95ec64c5c43334c0b.jpeg')
-                #pic2
-                    background-image: url('../../img/img_leaders/80729c1f721ebfb4ca10b6fed0982011.jpeg')
-                #pic4
-                    background-image: url('../../img/img_leaders/9b90d7c2f7abe2bcd33b2ccc866ee9c1.jpeg')
                 p
                     color: rgb(38, 28, 0, 1)
                     text-align: center
@@ -75,7 +72,12 @@
                 #num3
                     margin-top: 0
                     margin-left: 0
+    
+.leaders_light
+    background-color: white
 
+.leaders_dark
+    background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%)
 
 @media screen and (max-width: 320px)
     /* vertical */
