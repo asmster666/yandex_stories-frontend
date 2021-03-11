@@ -14,11 +14,58 @@
         width: 90%
         margin: 1rem auto
         .out_circle
-            .first_piece 
+            .first_piece, .second_piece, .third_piece, .forth_piece
+                position: absolute
+                .side_part 
+                    position: absolute
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+                    border-top-left-radius: 6px
+                    border-bottom-left-radius: 6px
+                .color_cov
+                    border-radius: 50%
+                .round_part
+                    position: absolute
+                    border: 2px solid transparent
+                    border-radius: 50%
+            .first_piece
+                .color_cov, .round_part
+                    clip-path: polygon(0% 50%, 50% 50%, 50% 0%, 0% 0%)
             .second_piece
+                .color_cov, .round_part
+                    clip-path: polygon(100% 50%, 50% 50%, 50% 0%, 100% 0%)
             .third_piece
+                .color_cov, .round_part
+                    clip-path: polygon(50% 100%, 50% 50%, 100% 50%, 100% 100%)
             .forth_piece
-
+                .color_cov, .round_part
+                    clip-path: polygon(50% 100%, 50% 50%, 0% 50%, 0% 100%)
+        
+        .white_circle
+            background-color: white
+            border-radius: 50%
+            position: absolute
+            .center
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+        
+    .stat
+        display: flex
+        flex-direction: column
+        .stat_item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .color 
+                border-radius: 50%
+            .str
+                color: #261C00
+                font-weight: bold
+            .count_wrap
+                display: flex
+                .counter 
+                    color: #BFBFBF 
 
 
 @media only screen and (max-width: 320px)
@@ -35,14 +82,9 @@
         .out_circle
             margin: 1rem auto
             .first_piece 
-                position: absolute
                 .side_part 
-                    position: absolute
                     width: 5px
                     height: 45px
-                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
-                    border-top-left-radius: 6px
-                    border-bottom-left-radius: 6px
                     background: rgba(255, 184, 0, 0.56)
                 .left 
                     margin-top: 1.6rem
@@ -57,31 +99,20 @@
                     height: 278px
                     margin-top: 0.1rem
                     margin-left: 0.3rem
-                    clip-path: polygon(50% 50%, 100% 50%, 100% 0%, 72% 0%)
                     background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
-                    border-radius: 50%
                     transform: rotate(-60deg) 
                 .round_part 
-                    position: absolute
                     width: 278px
                     height: 278px
                     margin-top: 0.1rem
                     margin-left: 0.3rem
-                    clip-path: polygon(50% 50%, 100% 50%, 100% 0%, 72% 0%)
-                    border: 2px solid transparent
-                    border-radius: 50%
                     border-color: rgba(255, 239, 153, 0.42)
                     transform: rotate(-60deg)
                 
             .second_piece 
-                position: absolute
                 .side_part 
-                    position: absolute
                     width: 5px
                     height: 45px
-                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
-                    border-top-left-radius: 6px
-                    border-bottom-left-radius: 6px
                     background: rgba(255, 184, 0, 0.24)
                 .left 
                     margin-top: 1.4rem
@@ -96,30 +127,20 @@
                     height: 278px
                     margin-top: 0.4rem
                     margin-left: 0.5rem
-                    clip-path: polygon(50% 50%, 100% 50%, 100% 0%, 72% 0%)
                     background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
-                    border-radius: 50%
                     transform: rotate(10deg)
                 .round_part 
-                    position: absolute
                     width: 278px
                     height: 278px
                     margin-top: 0.4rem
                     margin-left: 0.5rem
-                    clip-path: polygon(50% 50%, 100% 50%, 100% 0%, 72% 0%)
-                    border: 2px solid transparent
-                    border-radius: 50%
                     border-color: rgba(255, 239, 153, 0.22)
                     transform: rotate(10deg)
+
             .third_piece 
-                position: absolute
                 .side_part 
-                    position: absolute
                     width: 5px
                     height: 45px
-                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
-                    border-top-left-radius: 6px
-                    border-bottom-left-radius: 6px
                     background-color: rgba(191, 191, 191, 0.445)
                 .left 
                     margin-top: 13.1rem
@@ -134,9 +155,7 @@
                     height: 278px
                     margin-top: -0.1rem
                     margin-left: 0.9rem
-                    clip-path: polygon(100% 50%, 50% 50%, 45% 0%, 100% 0%)
                     background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%) 
-                    border-radius: 50%
                     transform: rotate(222deg)
                 .round_part 
                     position: absolute
@@ -144,20 +163,13 @@
                     height: 278px
                     margin-top: -0.1rem
                     margin-left: 0.9rem
-                    clip-path: polygon(100% 50%, 50% 50%, 52% 0%, 100% 0%)
-                    border: 2px solid transparent
-                    border-radius: 50%
                     border-color: rgba(228, 228, 228, 0.2)
                     transform: rotate(222deg)
+
             .forth_piece 
-                position: absolute
                 .side_part 
-                    position: absolute
                     width: 5px
                     height: 45px
-                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
-                    border-top-left-radius: 6px
-                    border-bottom-left-radius: 6px
                     background-color: rgba(166, 166, 166, 0.3725)
                 .left 
                     margin-top: 13.55rem
@@ -172,9 +184,7 @@
                     height: 278px
                     margin-top: -0.2rem
                     margin-left: 0.6rem
-                    clip-path: polygon(100% 50%, 50% 50%, 45% 0%, 100% 0%)
                     background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%) 
-                    border-radius: 50%
                     transform: rotate(116deg)
                 .round_part 
                     position: absolute
@@ -182,47 +192,30 @@
                     height: 278px
                     margin-top: -0.2rem
                     margin-left: 0.6rem
-                    clip-path: polygon(100% 50%, 50% 50%, 45% 0%, 100% 0%)
-                    border: 2px solid transparent
-                    border-radius: 50%
                     border-color: rgba(203, 203, 203, 0.1)
                     transform: rotate(116deg)
         
         .white_circle
             width: 194px
             height: 194px
-            background-color: white
-            border-radius: 50%
-            position: absolute
             margin: 2.8rem 0 0 3.2rem
             .center
-                width: 90%
+                width: 80%
                 margin: 3rem auto
-                display: flex
-                flex-direction: column
-                justify-content: center
-                align-items: center
                 h1
-                    font-size: 18px
+                    font-size: 19px
                     margin-left: 0
-                    width: 90%
-                b
+                p
                     font-size: 16px
     .stat
         width: 85%
         margin: 1rem auto
-        display: flex
-        flex-direction: column
         .stat_item
-            display: flex
-            justify-content: space-between
-            align-items: center
             width: 100%
             margin: 0.2rem auto
             .color  
                 width: 18px
                 height: 18px
-                border-radius: 50%
                 margin-top: -0.4rem
             .first  
                 background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
@@ -234,18 +227,14 @@
                 background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
                 
             .str
-                color: #261C00
                 font-size: 18px
-                font-weight: bold
                 padding: 0 0 0 0.5rem
                 width: 60%
                 margin-bottom: 0.5rem
                 
             .count_wrap
-                display: flex
                 width: 10%
                 .counter 
-                    color: #BFBFBF 
                     font-size: 18px
                     margin-left: 0.5rem
             
@@ -253,7 +242,376 @@
             width: 310px
             margin: 0.5 auto            
 
+@media screen and (min-width: 568px) and (max-height: 320px) and (orientation: landscape)
 
+@media screen and (min-width: 321px) and (max-width: 414px)
+    /* vertical */
+    #diagram_h1 
+       font-size: 28px
+       margin: 1rem 0 0 1rem
+    #diagram_p 
+       margin-left: 1rem 
+       margin-bottom: 2rem
+       font-size: 24px
+    
+    .diagram
+        height: 388px
+
+        .out_circle
+            margin: 1rem auto
+            .first_piece 
+                .side_part 
+                    width: 5px
+                    height: 59px
+                    background: rgba(255, 184, 0, 0.56)
+                .left 
+                    margin-top: 2.2rem
+                    margin-left: 6.2rem
+                    transform: rotate(-37deg)
+                .right 
+                    margin-top: 1.7rem
+                    margin-left: 17.5rem
+                    transform: rotate(210deg)
+                .color_cov 
+                    width: 388px
+                    height: 388px
+                    margin-top: 0.1rem
+                    margin-left: 0.3rem
+                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
+                    transform: rotate(-60deg) 
+                .round_part 
+                    width: 388px
+                    height: 388px
+                    margin-top: 0.1rem
+                    margin-left: 0.3rem
+                    border-color: rgba(255, 239, 153, 0.42)
+                    transform: rotate(-60deg)
+                
+            .second_piece 
+                .side_part 
+                    width: 5px
+                    height: 63px
+                    background: rgba(255, 184, 0, 0.24)
+                .left 
+                    margin-top: 2rem
+                    margin-left: 18rem
+                    transform: rotate(34deg)
+                .right 
+                    margin-top: 12.4rem
+                    margin-left: 22.15rem
+                    transform: rotate(280deg)
+                .color_cov 
+                    width: 388px
+                    height: 388px
+                    margin-top: 0.4rem
+                    margin-left: 0.5rem
+                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
+                    transform: rotate(10deg)
+                .round_part 
+                    width: 388px
+                    height: 388px
+                    margin-top: 0.4rem
+                    margin-left: 0.5rem
+                    border-color: rgba(255, 239, 153, 0.22)
+                    transform: rotate(10deg)
+            
+            .third_piece 
+                .side_part 
+                    width: 5px
+                    height: 60px
+                    background-color: rgba(191, 191, 191, 0.445)
+                .left 
+                    margin-top: 18.6rem
+                    margin-left: 6.6rem
+                    transform: rotate(-143deg)
+                .right 
+                    margin-top: 3rem
+                    margin-left: 5.1rem
+                    transform: rotate(130deg)
+                .color_cov 
+                    width: 388px
+                    height: 388px
+                    margin-top: -0.1rem
+                    margin-left: 0.9rem
+                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%) 
+                    transform: rotate(222deg)
+                .round_part 
+                    width: 388px
+                    height: 388px
+                    margin-top: -0.1rem
+                    margin-left: 0.9rem
+                    border-color: rgba(228, 228, 228, 0.2)
+                    transform: rotate(222deg)
+            
+            .forth_piece 
+                .side_part 
+                    width: 5px
+                    height: 61px
+                    background-color: rgba(166, 166, 166, 0.3725)
+                .left 
+                    margin-top: 19.3rem
+                    margin-left: 7.9rem
+                    transform: rotate(27deg)
+                .right 
+                    margin-top: 13.4rem
+                    margin-left: 21.75rem
+                    transform: rotate(108deg)
+                .color_cov 
+                    width: 388px
+                    height: 388px
+                    margin-top: -0.2rem
+                    margin-left: 0.6rem
+                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%) 
+                    transform: rotate(116deg)
+                .round_part 
+                    width: 388px
+                    height: 388px
+                    margin-top: -0.2rem
+                    margin-left: 0.6rem
+                    border-color: rgba(203, 203, 203, 0.1)
+                    transform: rotate(116deg)
+
+
+        .white_circle
+            width: 264px
+            height: 264px
+            margin: 3.8rem 0 0 4.1rem
+            .center
+                width: 80%
+                margin: 3rem auto
+                h1
+                    font-size: 28px
+                    margin-left: 0
+                p
+                    font-size: 22px
+    
+    .stat
+        width: 90%
+        margin: 1.5rem auto
+        .stat_item
+            width: 100%
+            margin: 0.2rem auto
+            .color  
+                width: 18px
+                height: 18px
+                margin-top: -0.4rem
+            .first  
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
+            .second
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
+            .third
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
+            .forth
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
+            
+            .str
+                font-size: 20px
+                padding: 0 0 0 0.5rem
+                width: 60%
+                margin-bottom: 0.5rem
+
+            .count_wrap
+                width: 10%
+                .counter 
+                    font-size: 20px
+                    margin-left: 0.3rem
+            
+        hr
+            width: 404px
+            margin: 0.5 auto
+
+@media screen and (min-width: 736px) and (max-height: 414px) and (orientation: landscape)
+
+@media screen and (min-width: 768px) and (max-device-width : 1024px) and (orientation: portrait)
+    /* vertical */
+    #diagram_h1 
+       font-size: 32px
+       margin-left: 1rem
+       margin-bottom: -0.2rem
+    #diagram_p 
+       margin-left: 1rem 
+       margin-bottom: -0.5rem
+       font-size: 30px
+    
+    .diagram
+        height: 608px
+
+        .out_circle
+            margin: 0 auto
+            .first_piece 
+                margin-top: 0.5rem
+                .side_part 
+                    width: 5px
+                    height: 59px
+                    background: rgba(255, 184, 0, 0.56)
+                .left 
+                    margin-top: 2.2rem
+                    margin-left: 6.2rem
+                    transform: rotate(-37deg)
+                .right 
+                    margin-top: 1.7rem
+                    margin-left: 17.5rem
+                    transform: rotate(210deg)
+                .color_cov 
+                    width: 608px
+                    height: 608px
+                    margin-top: 0.1rem
+                    margin-left: 0.3rem
+                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
+                    transform: rotate(-60deg) 
+                .round_part 
+                    width: 608px
+                    height: 608px
+                    margin-top: 0.1rem
+                    margin-left: 0.3rem
+                    border-color: rgba(255, 239, 153, 0.42)
+                    transform: rotate(-60deg)
+                
+            .second_piece 
+                margin-top: -0.7rem
+                margin-left: -0.5rem
+                transform: rotate(6deg)
+                .side_part 
+                    width: 5px
+                    height: 63px
+                    background: rgba(255, 184, 0, 0.24)
+                .left 
+                    margin-top: 2rem
+                    margin-left: 18rem
+                    transform: rotate(34deg)
+                .right 
+                    margin-top: 12.4rem
+                    margin-left: 22.15rem
+                    transform: rotate(280deg)
+                .color_cov 
+                    width: 608px
+                    height: 608px
+                    margin-top: 0.4rem
+                    margin-left: 0.5rem
+                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
+                    transform: rotate(10deg)
+                .round_part 
+                    width: 608px
+                    height: 608px
+                    margin-top: 0.4rem
+                    margin-left: 0.5rem
+                    border-color: rgba(255, 239, 153, 0.22)
+                    transform: rotate(10deg)
+            
+            .third_piece 
+                transform: rotate(3deg)
+                .side_part 
+                    width: 5px
+                    height: 60px
+                    background-color: rgba(191, 191, 191, 0.445)
+                .left 
+                    margin-top: 18.6rem
+                    margin-left: 6.6rem
+                    transform: rotate(-143deg)
+                .right 
+                    margin-top: 3rem
+                    margin-left: 5.1rem
+                    transform: rotate(130deg)
+                .color_cov 
+                    width: 608px
+                    height: 608px
+                    margin-top: -0.1rem
+                    margin-left: 0.9rem
+                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%) 
+                    transform: rotate(222deg)
+                .round_part 
+                    width: 608px
+                    height: 608px
+                    margin-top: -0.1rem
+                    margin-left: 0.9rem
+                    border-color: rgba(228, 228, 228, 0.2)
+                    transform: rotate(222deg)
+            
+            .forth_piece 
+                transform: rotate(6deg)
+                margin-left: 0.7rem
+                margin-top: -1rem
+                .side_part 
+                    width: 5px
+                    height: 61px
+                    background-color: rgba(166, 166, 166, 0.3725)
+                .left 
+                    margin-top: 19.3rem
+                    margin-left: 7.9rem
+                    transform: rotate(27deg)
+                .right 
+                    margin-top: 13.4rem
+                    margin-left: 21.75rem
+                    transform: rotate(108deg)
+                .color_cov 
+                    width: 608px
+                    height: 608px
+                    margin-top: -0.2rem
+                    margin-left: 0.6rem
+                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%) 
+                    transform: rotate(116deg)
+                .round_part 
+                    width: 608px
+                    height: 608px
+                    margin-top: -0.2rem
+                    margin-left: 0.6rem
+                    border-color: rgba(203, 203, 203, 0.1)
+                    transform: rotate(116deg)
+
+
+        .white_circle
+            width: 364px
+            height: 364px
+            margin: 6rem 0 0 7.1rem
+            .center
+                width: 80%
+                margin: 3rem auto
+                h1
+                    font-size: 28px
+                    margin-left: 0
+                p
+                    font-size: 22px
+    
+    .stat
+        width: 90%
+        margin: 1.5rem auto
+        .stat_item
+            width: 100%
+            margin: 0.5rem auto
+            .color  
+                width: 28px
+                height: 28px
+                margin-top: -0.4rem
+            .first  
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
+            .second
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
+            .third
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
+            .forth
+                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
+            
+            .str
+                font-size: 30px
+                padding: 0 0 0 0.5rem
+                width: 60%
+                margin-bottom: 0.5rem
+
+            .count_wrap
+                width: 10%
+                .counter 
+                    font-size: 30px
+                    margin-left: 0.8rem
+            
+        hr
+            width: 744px
+            margin: 0.5 auto
+
+@media screen and (min-width: 1024px) and (max-device-height : 768px) and (orientation: landscape)
+
+@media screen and (min-width: 1366px) and (max-width: 1890px)
+
+@media screen and (min-width: 1920px)
 
 
 

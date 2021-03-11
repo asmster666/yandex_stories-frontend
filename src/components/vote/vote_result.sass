@@ -48,7 +48,7 @@
                     color: #BFBFBF
 
         #first
-            z-index: 1
+            z-index: -2
             .first_place
                 background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
                 #num1
@@ -60,11 +60,21 @@
                 #num2
                     margin-top: 0
         #third
+            z-index: -3
             .third_place
                 background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
                 #num3
                     margin-top: 0
                     margin-left: 0 
+        #fifth_v
+            z-index: 5
+            .wrapper
+                hr
+                    background: #261C00
+                    height: 1px
+                    width: 90%
+
+
             
 
 
@@ -133,6 +143,22 @@
                     margin-left: 0
             .third_place
                 height: 155px
+        #fifth_v
+            display: flex
+            justify-content: flex-end
+            z-index: 1
+            right: 50%
+            height: 162px
+            .wrapper
+                width: 86.7%
+                .emodji
+                    position: absolute
+                    z-index: 1
+                p
+                    font-size: 12px
+                    margin-bottom: 0
+                #votes
+                    font-size: 12px
 
 @media screen and (min-width: 321px) and (max-width: 415px)
     /* vertical */
@@ -170,6 +196,7 @@
             .win_place
                 display: flex
                 justify-content: flex-start
+                width: 100%
                 z-index: -1
                 #num3, #num1, #num2
                     padding-top: 1rem
@@ -187,6 +214,7 @@
                 height: 356px
                 #num2
                     margin-left: 13%
+                    width: 100%
         #vote_result #third
             .third_place    
                 height: 292px
@@ -230,6 +258,7 @@
             #vote_result .win_place
                 display: flex
                 justify-content: flex-start
+                width: 100%
                 z-index: -1
                 #num3, #num1, #num2
                     padding-top: 1.5rem

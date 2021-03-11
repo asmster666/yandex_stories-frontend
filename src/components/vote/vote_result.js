@@ -2,14 +2,19 @@ import React, {Component} from 'react';
 import './vote_result.sass';
 
 export default class VoteResult extends Component {
+
+    renderVoteResult(alias, data) {
+        console.log(`${alias} ${data}`);
+    }
+
     render() {
         return (
-            <div id="vote_result">
+            <div id="vote_result" onLoad={this.renderVoteResult("it will be", "vote results")}>
                 <h1 id="vote_result_h1">Самый 🔎 внимательный разработчик</h1>
                 <p id="vote_result_p">Спринт № 213</p> 
 
                 <div className="winners">
-                    <div id="fifth" className="winner_item">
+                    <div id="fifth_v" className="winner_item">
                         <div className="wrapper">
                             <div className="emodji">👍</div>
                             <div id="pic5" className="pic"></div>
