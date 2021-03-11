@@ -1,3 +1,6 @@
+:root
+    --num_of_color: 0
+
 #diagram    
     margin: 0
     padding: 0
@@ -30,15 +33,47 @@
             .first_piece
                 .color_cov, .round_part
                     clip-path: polygon(0% 50%, 50% 50%, 50% 0%, 0% 0%)
+                
+                .side_part1
+                    background-color: rgba(255, 184, 0, 0.56)
+                .round_part1
+                    border-color: rgba(255, 239, 153, 0.42)
+
             .second_piece
                 .color_cov, .round_part
                     clip-path: polygon(100% 50%, 50% 50%, 50% 0%, 100% 0%)
+                
+                .side_part2
+                    background: rgba(255, 184, 0, 0.24)
+                .round_part2
+                    border-color: rgba(255, 239, 153, 0.22)
+
             .third_piece
                 .color_cov, .round_part
                     clip-path: polygon(50% 100%, 50% 50%, 100% 50%, 100% 100%)
+                
+                .side_part3
+                    background-color: rgba(191, 191, 191, 0.445)
+                .round_part3
+                    border-color: rgba(228, 228, 228, 0.2)
+
             .forth_piece
                 .color_cov, .round_part
                     clip-path: polygon(50% 100%, 50% 50%, 0% 50%, 0% 100%)
+                
+                .side_part4
+                    background-color: rgba(166, 166, 166, 0.3725)
+                .round_part4
+                    border-color: rgba(203, 203, 203, 0.1)
+                
+    .class_color1
+        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
+    .class_color2
+        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
+    .class_color3
+        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
+    .class_color4
+        background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
         
         .white_circle
             background-color: white
@@ -85,7 +120,6 @@
                 .side_part 
                     width: 5px
                     height: 45px
-                    background: rgba(255, 184, 0, 0.56)
                 .left 
                     margin-top: 1.6rem
                     margin-left: 4.5rem
@@ -99,21 +133,18 @@
                     height: 278px
                     margin-top: 0.1rem
                     margin-left: 0.3rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
                     transform: rotate(-60deg) 
                 .round_part 
                     width: 278px
                     height: 278px
                     margin-top: 0.1rem
                     margin-left: 0.3rem
-                    border-color: rgba(255, 239, 153, 0.42)
                     transform: rotate(-60deg)
                 
             .second_piece 
                 .side_part 
                     width: 5px
                     height: 45px
-                    background: rgba(255, 184, 0, 0.24)
                 .left 
                     margin-top: 1.4rem
                     margin-left: 13.05rem
@@ -127,21 +158,18 @@
                     height: 278px
                     margin-top: 0.4rem
                     margin-left: 0.5rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
                     transform: rotate(10deg)
                 .round_part 
                     width: 278px
                     height: 278px
                     margin-top: 0.4rem
                     margin-left: 0.5rem
-                    border-color: rgba(255, 239, 153, 0.22)
                     transform: rotate(10deg)
 
             .third_piece 
                 .side_part 
                     width: 5px
                     height: 45px
-                    background-color: rgba(191, 191, 191, 0.445)
                 .left 
                     margin-top: 13.1rem
                     margin-left: 5.2rem
@@ -155,7 +183,6 @@
                     height: 278px
                     margin-top: -0.1rem
                     margin-left: 0.9rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%) 
                     transform: rotate(222deg)
                 .round_part 
                     position: absolute
@@ -163,14 +190,12 @@
                     height: 278px
                     margin-top: -0.1rem
                     margin-left: 0.9rem
-                    border-color: rgba(228, 228, 228, 0.2)
                     transform: rotate(222deg)
 
             .forth_piece 
                 .side_part 
                     width: 5px
                     height: 45px
-                    background-color: rgba(166, 166, 166, 0.3725)
                 .left 
                     margin-top: 13.55rem
                     margin-left: 5.9rem
@@ -183,8 +208,7 @@
                     width: 278px
                     height: 278px
                     margin-top: -0.2rem
-                    margin-left: 0.6rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%) 
+                    margin-left: 0.6rem 
                     transform: rotate(116deg)
                 .round_part 
                     position: absolute
@@ -192,7 +216,6 @@
                     height: 278px
                     margin-top: -0.2rem
                     margin-left: 0.6rem
-                    border-color: rgba(203, 203, 203, 0.1)
                     transform: rotate(116deg)
         
         .white_circle
@@ -217,14 +240,6 @@
                 width: 18px
                 height: 18px
                 margin-top: -0.4rem
-            .first  
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
-            .second
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
-            .third
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
-            .forth
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
                 
             .str
                 font-size: 18px
@@ -263,7 +278,6 @@
                 .side_part 
                     width: 5px
                     height: 59px
-                    background: rgba(255, 184, 0, 0.56)
                 .left 
                     margin-top: 2.2rem
                     margin-left: 6.2rem
@@ -277,21 +291,18 @@
                     height: 388px
                     margin-top: 0.1rem
                     margin-left: 0.3rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
                     transform: rotate(-60deg) 
                 .round_part 
                     width: 388px
                     height: 388px
                     margin-top: 0.1rem
                     margin-left: 0.3rem
-                    border-color: rgba(255, 239, 153, 0.42)
                     transform: rotate(-60deg)
                 
             .second_piece 
                 .side_part 
                     width: 5px
                     height: 63px
-                    background: rgba(255, 184, 0, 0.24)
                 .left 
                     margin-top: 2rem
                     margin-left: 18rem
@@ -305,21 +316,18 @@
                     height: 388px
                     margin-top: 0.4rem
                     margin-left: 0.5rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
                     transform: rotate(10deg)
                 .round_part 
                     width: 388px
                     height: 388px
                     margin-top: 0.4rem
                     margin-left: 0.5rem
-                    border-color: rgba(255, 239, 153, 0.22)
                     transform: rotate(10deg)
             
             .third_piece 
                 .side_part 
                     width: 5px
                     height: 60px
-                    background-color: rgba(191, 191, 191, 0.445)
                 .left 
                     margin-top: 18.6rem
                     margin-left: 6.6rem
@@ -333,21 +341,18 @@
                     height: 388px
                     margin-top: -0.1rem
                     margin-left: 0.9rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%) 
                     transform: rotate(222deg)
                 .round_part 
                     width: 388px
                     height: 388px
                     margin-top: -0.1rem
                     margin-left: 0.9rem
-                    border-color: rgba(228, 228, 228, 0.2)
                     transform: rotate(222deg)
             
             .forth_piece 
                 .side_part 
                     width: 5px
                     height: 61px
-                    background-color: rgba(166, 166, 166, 0.3725)
                 .left 
                     margin-top: 19.3rem
                     margin-left: 7.9rem
@@ -361,14 +366,12 @@
                     height: 388px
                     margin-top: -0.2rem
                     margin-left: 0.6rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%) 
                     transform: rotate(116deg)
                 .round_part 
                     width: 388px
                     height: 388px
                     margin-top: -0.2rem
                     margin-left: 0.6rem
-                    border-color: rgba(203, 203, 203, 0.1)
                     transform: rotate(116deg)
 
 
@@ -395,14 +398,6 @@
                 width: 18px
                 height: 18px
                 margin-top: -0.4rem
-            .first  
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
-            .second
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
-            .third
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
-            .forth
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
             
             .str
                 font-size: 20px
@@ -443,7 +438,6 @@
                 .side_part 
                     width: 5px
                     height: 59px
-                    background: rgba(255, 184, 0, 0.56)
                 .left 
                     margin-top: 2.2rem
                     margin-left: 6.2rem
@@ -457,14 +451,12 @@
                     height: 608px
                     margin-top: 0.1rem
                     margin-left: 0.3rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
                     transform: rotate(-60deg) 
                 .round_part 
                     width: 608px
                     height: 608px
                     margin-top: 0.1rem
                     margin-left: 0.3rem
-                    border-color: rgba(255, 239, 153, 0.42)
                     transform: rotate(-60deg)
                 
             .second_piece 
@@ -474,7 +466,6 @@
                 .side_part 
                     width: 5px
                     height: 63px
-                    background: rgba(255, 184, 0, 0.24)
                 .left 
                     margin-top: 2rem
                     margin-left: 18rem
@@ -488,14 +479,12 @@
                     height: 608px
                     margin-top: 0.4rem
                     margin-left: 0.5rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
                     transform: rotate(10deg)
                 .round_part 
                     width: 608px
                     height: 608px
                     margin-top: 0.4rem
                     margin-left: 0.5rem
-                    border-color: rgba(255, 239, 153, 0.22)
                     transform: rotate(10deg)
             
             .third_piece 
@@ -503,7 +492,6 @@
                 .side_part 
                     width: 5px
                     height: 60px
-                    background-color: rgba(191, 191, 191, 0.445)
                 .left 
                     margin-top: 18.6rem
                     margin-left: 6.6rem
@@ -517,14 +505,12 @@
                     height: 608px
                     margin-top: -0.1rem
                     margin-left: 0.9rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%) 
                     transform: rotate(222deg)
                 .round_part 
                     width: 608px
                     height: 608px
                     margin-top: -0.1rem
                     margin-left: 0.9rem
-                    border-color: rgba(228, 228, 228, 0.2)
                     transform: rotate(222deg)
             
             .forth_piece 
@@ -534,7 +520,6 @@
                 .side_part 
                     width: 5px
                     height: 61px
-                    background-color: rgba(166, 166, 166, 0.3725)
                 .left 
                     margin-top: 19.3rem
                     margin-left: 7.9rem
@@ -547,15 +532,13 @@
                     width: 608px
                     height: 608px
                     margin-top: -0.2rem
-                    margin-left: 0.6rem
-                    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%) 
+                    margin-left: 0.6rem 
                     transform: rotate(116deg)
                 .round_part 
                     width: 608px
                     height: 608px
                     margin-top: -0.2rem
                     margin-left: 0.6rem
-                    border-color: rgba(203, 203, 203, 0.1)
                     transform: rotate(116deg)
 
 
@@ -582,14 +565,6 @@
                 width: 28px
                 height: 28px
                 margin-top: -0.4rem
-            .first  
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
-            .second
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
-            .third
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
-            .forth
-                background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
             
             .str
                 font-size: 30px
