@@ -3,7 +3,7 @@ import ResponseWork from './response_work';
 import '../diagram/diagram.sass';
 
 const DiagramRender = () => {
-    let alias = "vote";
+    let alias = "diagram";
     let data = {};
 
     data = ResponseWork(alias, data);

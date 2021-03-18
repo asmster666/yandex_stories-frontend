@@ -3,7 +3,7 @@ import ResponseWork from './response_work';
 import '../chart/chart.sass';
 
 const ChartRender = () => {
-    let alias = "vote";
+    let alias = "chart";
     let data = {};
 
     data = ResponseWork(alias, data);

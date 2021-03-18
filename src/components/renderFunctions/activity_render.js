@@ -3,7 +3,7 @@ import ResponseWork from './response_work';
 import '../activity/activity.sass';
 
 const ActivityRender = () => {
-    let alias = "vote";
+    let alias = "activity";
     let data = {};
 
     data = ResponseWork(alias, data);
