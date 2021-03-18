@@ -26,28 +26,22 @@ function wrapCoderItem(array) {
     let values = [];
     let main_wrapper = document.querySelector(".coders");
 
-    let column1 = document.createElement("div");
-    column1.classList.add("first_column");
-    main_wrapper.appendChild(column1);
+    createColumns(main_wrapper);
 
-    let column2 = document.createElement("div");
-    column2.classList.add("second_column"); 
-    secondColumnThings(column2);
-    main_wrapper.appendChild(column2);
-
-    let column3 = document.createElement("div");
-    column3.classList.add("third_column");
-    main_wrapper.appendChild(column3);
+    let column1 = main_wrapper.firstChild,
+        column2 = main_wrapper.children[1],
+        column3 = main_wrapper.lastChild;
 
     array.forEach(item => {
         item.forEach(coder => {
             let coder_item = document.createElement("div");
             coder_item.innerHTML = `
-                <div className="pic">${coder.avatar}</div>
+                <div className="pic" style="background-image: url(${coder.avatar})"></div> 
                 <p>${coder.name}</p>
             `;
             coder_item.classList.add("coder_item");
             coder_item.classList.add(`${getCompareParameter(coder.valueText, values)}`);
+            //css_pic.style.setProperty('--image', `${coder.avatar}`);
 
             if(window.innerWidth > window.innerHeight) {
                 displayParticipants(values, coder_item, 6);
@@ -62,6 +56,21 @@ function wrapCoderItem(array) {
     });
     console.log(values);
 };
+
+function createColumns(parent) {
+    let column1 = document.createElement("div");
+    column1.classList.add("first_column");
+    parent.appendChild(column1);
+
+    let column2 = document.createElement("div");
+    column2.classList.add("second_column"); 
+    secondColumnThings(column2);
+    parent.appendChild(column2);
+
+    let column3 = document.createElement("div");
+    column3.classList.add("third_column");
+    parent.appendChild(column3);
+}
 
 function getCompareParameter(parameter, array) {
     let number = parameter.substr(0, 2);
