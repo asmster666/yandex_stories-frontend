@@ -52,7 +52,7 @@ function wrapCoderItem(array) {
                     addToColumns(values, coder_item, 8, column1, column3, column2);
                 }
             }
-        })
+        });
     });
     console.log(values);
 };

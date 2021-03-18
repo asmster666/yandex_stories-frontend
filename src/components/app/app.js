@@ -4,7 +4,7 @@ import {Vote, VoteResult} from '../vote';
 import Chart from '../chart/chart'; 
 import Diagram from '../diagram';
 import Activity from '../activity';
-import VoteRender from '../renderFunctions';
+import {VoteRender, LeadersRender} from '../renderFunctions';
 
 import './app.sass';
 
@@ -12,7 +12,7 @@ export default class App extends Component {
     render() {
         return(
             <div className="app"> 
-                <VoteRender /> 
+                <LeadersRender /> 
             </div>
         )
     }

@@ -14,6 +14,12 @@ const ResponseWork = (type, object) => {
                     console.log("vote response");
                     break;
                 case "leaders":
+                    object = {
+                        title: element.data.title,
+                        subtitle: element.data.subtitle,
+                        emoji: element.data.emoji,
+                        users: [element.data.users]
+                    }
                     console.log("leaders response");
                     break;
                 default:

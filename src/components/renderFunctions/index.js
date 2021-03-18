@@ -1,2 +1,5 @@
 import VoteRender from './vote_render';
-export default VoteRender;
+import LeadersRender from './leaders_render';
+export { VoteRender, 
+    LeadersRender
+};
