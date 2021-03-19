@@ -5,7 +5,7 @@ const ResponseWork = (type, object) => {
         if(type === element.alias) {
             switch (type) {
                 case "vote":
-                    object = {
+                    object = { 
                         title: element.data.title,
                         subtitle: element.data.subtitle,
                         emoji: element.data.emoji,
@@ -31,9 +31,6 @@ const ResponseWork = (type, object) => {
                         users: [element.data.users]
                     };
                     console.log("chart response");
-                    break;
-                case "vote_result": 
-                    console.log("vote results response");
                     break;
                 case "diagram":
                     object = {

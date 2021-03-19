@@ -8,11 +8,32 @@ const ActivityRender = () => {
 
     data = ResponseWork(alias, data);
     
-    useEffect(() => {wrapCoderItem(data.users)});
+    useEffect(() => {wrapActivity(data.data)});
 
     return(
-        <div id="activity"></div>
+        <div id="activity">
+            <h1 id="activity_h1">{data.title}</h1>
+            <p id="activity_p">{data.subtitle}</p> 
+
+            <div id="grid"></div>
+        </div>
     )
 }
 
-export default ActivityRender;
+function wrapActivity(object) {
+    let main = document.querySelector("#grid");
+
+    for(let day of object) {
+        main.innerHTML = `
+            monday: ${day.mon} <br>
+            tuesday: ${day.tue} <br>
+            wednesday: ${day.wed} <br>
+            thursday: ${day.thu} <br>
+            friday: ${day.fri} <br>
+            saturday: ${day.sat} <br>
+            sunday: ${day.sun} <br>
+        `;
+    }
+}
+
+export default ActivityRender; 

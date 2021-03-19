@@ -18,7 +18,7 @@ const VoteRender = () => {
     
             <div className="coders"></div>
         </div>
-    )
+    ) 
     
 }
 
