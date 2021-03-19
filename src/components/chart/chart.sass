@@ -4,9 +4,6 @@
     width: 100%
     height: 100%
 
-    #chart_p
-        color: #BFBFBF
-
     .columns
         display: flex
         justify-content: space-evenly
@@ -17,10 +14,6 @@
             .col 
                 display: flex
                 align-items: flex-end   
-                ._col
-                    background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%) 
-            .num, .date
-                color: #BFBFBF
     
     .users
         display: flex
@@ -30,6 +23,65 @@
             .pic
                 background-size: cover
                 background-position: center
+
+.theme_light
+    background-color: white
+    #chart_p
+        color: #BFBFBF
+
+    .users
+        .user
+            .info_wrap
+                #name
+                    color: #261C00
+                #age
+                    color: #BFBFBF
+
+.theme_dark
+    background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%)
+    #chart_h1  
+        color: white
+    #chart_p
+        color: #918F8A
+    
+    .users
+        .user
+            .info_wrap
+                #name
+                    color: white
+                #age
+                    color: #918F8A
+
+.columns_light
+    .column
+        .num
+            color: #BFBFBF
+        .col
+            ._col
+                background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+            .gold
+                background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
+        .seven
+            .black
+                color: #261C00
+        .num, .date
+            color: #BFBFBF
+
+.columns_dark
+    .column
+        .num
+            color: #918F8A
+        .col
+            ._col
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 93.3% at 38.75% 72.1%, #000000 0%, #231900 0.01%, #4D4D4D 100%)
+            .gold   
+                background: radial-gradient(81.14% 100% at 50% 0%, #FFA300 0%, #2D1C00 100%)
+        .seven
+            .black
+                color: white
+        .num, .date
+            color: #918F8A
+
 
 @media screen and (max-width: 320px)  
     /* vertical */
@@ -49,7 +101,6 @@
             align-items: center
             margin-left: 0.8rem
             .num
-                color: #BFBFBF
                 margin-left: 0
             .col
                 width: 40px
@@ -74,7 +125,6 @@
                     height: 90px
         .seven
             .black
-                color: #261C00
                 font-size: 14px
                 margin-left: 0
             .col
@@ -82,7 +132,6 @@
                     width: 40px 
                     height: 122px
                     margin-bottom: 0
-                    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
         .eight
             .num
                 opacity: 0
@@ -116,11 +165,8 @@
                 margin-left: 0.2rem
                 align-items: flex-start
                 #name
-                    color: #261C00
                     margin-left: 0
                     margin-bottom: 0.5rem
-                #age
-                    color: #BFBFBF
         
         .first_user
             .pic
@@ -151,8 +197,6 @@
         height: 206px /* 70% - 24px */
         margin: 0.2rem 0.8rem 0 0.8rem
         .column
-            .num
-                color: #BFBFBF
             .col
                 width: 40px
                 height: 150px
@@ -184,14 +228,12 @@
                     height: 90px
         .seven
             .black
-                color: #261C00
                 font-size: 14px
                 margin-bottom: 0
             .col
                 .gold
                     width: 40px 
                     height: 122px
-                    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
         .eight
             .num
                 opacity: 0
@@ -222,11 +264,8 @@
             .info_wrap
                 margin-left: 0.2rem
                 #name
-                    color: #261C00
                     margin-top: 0.4rem
                     margin-bottom: 0
-                #age
-                    color: #BFBFBF
         
         .first_user
             margin-left: 1rem
@@ -254,8 +293,6 @@
             align-items: center
             margin-left: 1.2rem
             font-size: 18px
-            .num
-                color: #BFBFBF
             .col
                 width: 50px
                 height: 200px
@@ -278,14 +315,12 @@
                     height: 140px
         .seven
             .black
-                color: #261C00
                 font-size: 18px
             .col
                 .gold
                     width: 50px 
                     height: 182px
                     margin-bottom: 0
-                    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
         .eight
             .num
                 opacity: 0
@@ -320,12 +355,9 @@
                 align-items: flex-start 
                 font-size: 20px
                 #name
-                    color: #261C00
                     margin-top: 0.5rem
                     margin-left: 0
                     margin-bottom: 0.5rem
-                #age
-                    color: #BFBFBF
         
         .first_user
             margin-bottom: 0.3rem
@@ -357,17 +389,15 @@
             height: 226px /* 70% - 4px */
             margin: 1rem 1rem 0 1rem
             .column
-                .num 
-                    color: #BFBFBF
                 .col
                     width: 40px
                     height: 170px
                     ._col
-                            width: 40px 
+                        width: 40px 
             .first
                 .col
                     ._col
-                            height: 85px
+                        height: 85px
             .second
                 .col
                     ._col
@@ -390,14 +420,12 @@
                         height: 90px
             .seven
                 .black
-                    color: #261C00
                     font-size: 18px
                 .col
                     .gold
                         width: 40px 
                         height: 122px
                         margin-bottom: 0
-                        background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
             .eight
                 .num
                     opacity: 0
@@ -428,10 +456,7 @@
                 .info_wrap
                     margin-left: 0.2rem
                     #name
-                        color: #261C00
                         margin-bottom: 0.3rem
-                    #age
-                        color: #BFBFBF
             
             .first_user
                 margin-left: 1rem
@@ -459,8 +484,6 @@
             align-items: center
             margin-left: 4rem
             font-size: 32px
-            .num
-                color: #BFBFBF
             .col
                 width: 60px
                 height: 400px
@@ -483,14 +506,12 @@
                     height: 300px
         .seven
             .black
-                color: #261C00
                 font-size: 32px
             .col
                 .gold
                     width: 60px 
                     height: 382px
                     margin-bottom: 0
-                    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
         .eight
             .num
                 opacity: 0
@@ -527,12 +548,9 @@
                 align-items: flex-start 
                 font-size: 32px
                 #name
-                    color: #261C00
                     margin-top: 0.5rem
                     margin-left: 0
                     margin-bottom: 0.5rem
-                #age
-                    color: #BFBFBF
         
         .first_user
             margin-bottom: 0.5rem
@@ -566,7 +584,6 @@
         .column
             align-items: center
             .num
-                color: #BFBFBF
                 font-size: 24px
             .col
                 width: 50px
@@ -601,14 +618,12 @@
                     height: 130px
         .seven
             .black
-                color: #261C00
                 font-size: 24px
             .col
                 .gold
                     width: 50px  
                     height: 282px
                     justify-content: flex-end
-                    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
         .eight
             .num
                 opacity: 0
@@ -638,12 +653,10 @@
             .info_wrap
                 margin-left: 0.5rem
                 #name
-                    color: #261C00
                     font-size: 24px
                     margin-top: 0.2rem
                     margin-bottom: 0.5rem
                 #age
-                    color: #BFBFBF
                     font-size: 20px
         
         .first_user
@@ -663,7 +676,6 @@
     #chart_p
         font-size: 36px
         text-align: center
-        color: #BFBFBF
 
     .columns
         width: 95%
@@ -672,7 +684,6 @@
         .column
             align-items: center
             .num
-                color: #BFBFBF
                 font-size: 28px
             .col
                 width: 60px
@@ -707,13 +718,11 @@
                     height: 210px
         .seven
             .black
-                color: #261C00
                 font-size: 28px
             .col
                 .gold
                     width: 60px 
                     height: 382px
-                    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
         .eight
             .num
                 opacity: 0
@@ -743,12 +752,10 @@
             .info_wrap
                 margin-left: 1rem
                 #name
-                    color: #261C00
                     font-size: 28px
                     margin-top: 0.2rem
                     margin-bottom: 0.5rem
                 #age
-                    color: #BFBFBF
                     font-size: 28px
         
         .first_user
@@ -768,7 +775,6 @@
     #chart_p
         font-size: 42px
         text-align: center
-        color: #BFBFBF
 
     .columns
         width: 95%
@@ -777,7 +783,6 @@
         .column
             align-items: center
             .num
-                color: #BFBFBF
                 font-size: 34px
             .col
                 width: 70px
@@ -812,13 +817,11 @@
                     height: 210px
         .seven
             .black
-                color: #261C00
                 font-size: 34px
             .col
                 .gold
                     width: 70px 
                     height: 382px
-                    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
         .eight
             .num
                 opacity: 0
@@ -848,12 +851,10 @@
             .info_wrap
                 margin-left: 0.5rem
                 #name
-                    color: #261C00
                     font-size: 34px
                     margin-top: 0.3rem
                     margin-bottom: 0.5rem
                 #age
-                    color: #BFBFBF
                     font-size: 34px
         
         .first_user

@@ -2,13 +2,32 @@ import React, {Component} from 'react';
 import './leaders.sass';
 
 export default class Leaders extends Component {
+
+    toggleTheme() {
+        let wrap = document.querySelector("#leaders");
+        let winners = document.querySelector(".winners");
+        if(wrap.classList.contains("theme_light")) {
+            wrap.classList.add("theme_dark");
+            winners.classList.add("leaders_dark");
+
+            wrap.classList.remove("theme_light");
+            winners.classList.remove("leaders_light"); 
+        } else {
+            wrap.classList.add("theme_light");
+            winners.classList.add("leaders_light");
+            
+            wrap.classList.remove("theme_dark");
+            winners.classList.remove("leaders_dark");
+        }
+    }
+
     render() {
         return (
-            <div id="leaders">
+            <div id="leaders" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="leaders_h1">Больше всего ️коммитов</h1>
                 <p id="leaders_p">Спринт № 213</p>
 
-                <div className="winners">
+                <div className="winners leaders_light">
                     <div id="item5" className="winner_item">
                         <div className="wrapper">
                             <div className="emodji">👍</div>

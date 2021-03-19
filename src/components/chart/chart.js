@@ -2,17 +2,36 @@ import React, {Component} from 'react';
 import './chart.sass';
 
 export default class Chart extends Component {
+
+    toggleTheme() {
+        let wrap = document.querySelector("#chart");
+        let columns = document.querySelector(".columns");
+        if(wrap.classList.contains("theme_light")) {
+            wrap.classList.add("theme_dark");
+            columns.classList.add("columns_dark");
+
+            wrap.classList.remove("theme_light");
+            columns.classList.remove("columns_light"); 
+        } else {
+            wrap.classList.add("theme_light");
+            columns.classList.add("columns_light");
+            
+            wrap.classList.remove("theme_dark");
+            columns.classList.remove("columns_dark");
+        }
+    }
+
     render() {
         return (
-            <div id="chart">
+            <div id="chart" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="chart_h1">Коммиты</h1>
                 <p id="chart_p">Спринт № 213</p>    
 
-                <div className="columns">
+                <div className="columns columns_light">
                     <div className="column first">
                         <p className="num">112</p>
                         <div className="col">
-                            <div className="_col"></div>
+                            <div className="_col"></div> 
                         </div>
                         <p className="date">207</p>
                     </div>

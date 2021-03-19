@@ -2,9 +2,28 @@ import React, {Component} from 'react';
 import './diagram.sass';
 
 export default class Diagram extends Component {
+
+    toggleTheme() {
+        let wrap = document.querySelector("#diagram");
+        let diagram = document.querySelector(".diagram");
+        if(wrap.classList.contains("theme_light")) {
+            wrap.classList.add("theme_dark");
+            diagram.classList.add("diagram_dark");
+
+            wrap.classList.remove("theme_light");
+            diagram.classList.remove("diagram_light");
+        } else {
+            wrap.classList.add("theme_light");
+            diagram.classList.add("diagram_light");
+
+            wrap.classList.remove("theme_dark");
+            diagram.classList.remove("diagram_dark"); 
+        }
+    }
+
     render() {
         return(
-            <div id="diagram">
+            <div id="diagram" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="diagram_h1">Размер коммитов</h1>
                 <p id="diagram_p">Спринт № 213</p> 
 
@@ -13,11 +32,11 @@ export default class Diagram extends Component {
                         <div className="first_piece">
                             <div className="side_part left"></div>
                             <div className="round_part"></div>
-                            <div className="side_part right"></div>
+                            <div className="side_part right"></div> 
                             <div className="color_cov"></div>
                         </div>
                         <div className="second_piece">
-                            <div className="side_part left"></div>
+                            <div className="side_part left"></div> 
                             <div className="round_part"></div>
                             <div className="side_part right"></div>
                             <div className="color_cov"></div>

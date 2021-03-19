@@ -30,7 +30,7 @@ function wrapCoderItem(array) {
 
     let column1 = main_wrapper.firstChild,
         column2 = main_wrapper.children[1],
-        column3 = main_wrapper.lastChild;
+        column3 = main_wrapper.lastChild; 
 
     array.forEach(item => {
         item.forEach(coder => {

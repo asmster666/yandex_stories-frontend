@@ -45,12 +45,12 @@ const DiagramRender = () => {
                 <div className="white_circle">
                     <div className="center">
                         <h1>{data.totalText}</h1>
-                        <p>{data.differenceText}</p>
+                        <p>{data.differenceText}</p> 
                     </div>
                 </div>
             </div>
 
-            <div className="stat"></div>
+            <div className="stat"></div> 
         </div>
     )
 }
@@ -60,9 +60,26 @@ function wrapDiagram(array) {
 
     array.forEach(item => {
         item.forEach(categ => {
-            stat.innerHTML = `${categ.title}`;
+            let statItem = document.createElement("div");
+            statItem.innerHTML = `
+                <div className="first color"></div>
+                <div className="str"> ${categ.title}</div>
+                <div className="count_wrap">
+                    <div className="counter c_1">+${getValueForm(categ.differenceText)}</div>
+                    <div className="counter c_2">${getValueForm(categ.valueText)}</div>
+                </div>
+            `;
+            statItem.classList.add("stat_item");
+            stat.appendChild(statItem);
         })
     });
+};
+
+function getValueForm(parameter) {
+    let number = parameter.substr(0, 3);
+    let result = parseInt(number.trim());
+
+    return result;
 }
 
 export default DiagramRender;  
