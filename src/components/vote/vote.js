@@ -2,13 +2,32 @@ import React, {Component} from 'react';
 import './vote.sass';
 
 export default class Vote extends Component {
+
+    toggleTheme() {
+        let wrap = document.querySelector("#vote");
+        let codersVote = document.querySelector(".coders");
+        if(wrap.classList.contains("theme_light")) {
+            wrap.classList.add("theme_dark");
+            codersVote.classList.add("coders_vote_dark");
+
+            wrap.classList.remove("theme_light");
+            codersVote.classList.remove("coders_vote_light"); 
+        } else {
+            wrap.classList.add("theme_light");
+            codersVote.classList.add("coders_vote_light");
+            
+            wrap.classList.remove("theme_dark");
+            codersVote.classList.remove("coders_vote_dark");
+        }
+    }
+
     render() {
         return(
-            <div id="vote">
+            <div id="vote" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="vote_h1">Самый 🔎 внимательный разработчик</h1>
                 <p id="vote_p">Спринт № 213</p>   
 
-                <div className="coders">
+                <div className="coders coders_vote_light">
                     <div className="first_column">
                         <div className="item1 coder_item">
                             <div id="pic1" className="pic"></div>
@@ -43,7 +62,7 @@ export default class Vote extends Component {
                         <div className="down_wrap">
                             <div className="item5 coder_item">
                                 <div className="grey_wrap pic_wrapper">
-                                    <div id="pic5" className="pic"></div>
+                                    <div id="pic5" className="pic"></div> 
                                     <p>Юрий Фролов</p>
                                 </div>
                             </div>
