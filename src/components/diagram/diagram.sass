@@ -12,7 +12,7 @@
 
     .diagram
         width: 90%
-        margin: 1rem auto 
+        margin: 1rem auto  
         .out_circle
             .first_piece, .second_piece, .third_piece, .forth_piece
                 position: absolute
@@ -93,8 +93,6 @@
                 .counter 
                     color: #918F8A
 
-
-
 .diagram_light 
     background-color: white
     .diagram
@@ -126,8 +124,7 @@
                 background-color: rgba(191, 191, 191, 0.445)
             .round_part4
                 border-color: rgba(228, 228, 228, 0.2)
-        
-        
+               
 .diagram_dark
     .diagram
         .out_circle
@@ -148,16 +145,18 @@
 @media screen and (max-width: 320px)
     /* vertical */
     #diagram_h1 
-       font-size: 25px
-       margin: 1rem 0 0 1rem
+        font-size: 25px
+        padding-top: 0.2rem 
+        margin-left: 1rem 
     #diagram_p 
-       margin-left: 1rem 
+        margin-top: -0.5rem
+        margin-left: 1rem 
     
     .diagram
         height: 280px
 
         .out_circle
-            margin: 1rem auto
+            margin: 0.5rem auto
             .first_piece, .second_piece, .third_piece, .forth_piece 
                 .side_part 
                     width: 5px
@@ -221,6 +220,7 @@
     .stat
         width: 85%
         margin: 1rem auto
+        padding-bottom: 0.5rem
         .stat_item
             width: 100%
             margin: 0.2rem auto
@@ -239,10 +239,14 @@
                 width: 10%
                 .counter 
                     font-size: 18px
-                    margin-left: 0.5rem
+                .c_1
+                    margin-right: 0.5rem
+                    margin-left: -0.8rem
+                .c_2
+                    margin-right: 0.2rem
             
         hr
-            width: 310px
+            width: 280px
             margin: 0.5 auto            
 
 @media screen and (min-width: 568px) and (max-height: 320px) and (orientation: landscape)
@@ -250,12 +254,13 @@
 @media screen and (min-width: 321px) and (max-width: 414px)
     /* vertical */
     #diagram_h1 
-       font-size: 28px
-       margin: 1rem 0 0 1rem
+        font-size: 28px
+        padding-top: 0.3rem
+        margin-left: 1rem 
     #diagram_p 
-       margin-left: 1rem 
-       margin-bottom: 2rem
-       font-size: 24px
+        margin-top: -0.5rem
+        margin-left: 1rem 
+        font-size: 24px
     
     .diagram
         height: 390px
@@ -327,6 +332,7 @@
     .stat
         width: 90%
         margin: 1.5rem auto
+        padding-bottom: 0.5rem
         .stat_item
             width: 100%
             margin: 0.2rem auto
@@ -345,10 +351,14 @@
                 width: 10%
                 .counter 
                     font-size: 20px
-                    margin-left: 0.3rem
+                .c_1
+                    margin-right: 0.5rem
+                    margin-left: -1.5rem
+                .c_2
+                    margin-right: 0.2rem
             
         hr
-            width: 404px
+            width: 375px
             margin: 0.5 auto
 
 @media screen and (min-width: 736px) and (max-height: 414px) and (orientation: landscape)
@@ -357,18 +367,18 @@
     /* vertical */
     #diagram_h1 
        font-size: 32px
+       padding-top: 0.5rem
        margin-left: 1rem
-       margin-bottom: -0.2rem
     #diagram_p 
        margin-left: 1rem 
-       margin-bottom: -0.5rem
+       margin-top: -0.5rem
        font-size: 30px
     
     .diagram
         height: 610px
 
         .out_circle
-            margin: 0 auto
+            margin: -1rem auto
             .first_piece, .second_piece, .third_piece, .forth_piece
                 .side_part 
                     width: 5px
@@ -433,6 +443,7 @@
     .stat
         width: 90%
         margin: 1.5rem auto
+        padding-bottom: 0.5rem
         .stat_item
             width: 100%
             margin: 0.5rem auto
@@ -451,10 +462,14 @@
                 width: 10%
                 .counter 
                     font-size: 30px
-                    margin-left: 0.8rem
+                .c_1
+                    margin-right: 0.5rem
+                    margin-left: -1.5rem
+                .c_2
+                    margin-right: 0.2rem
             
         hr
-            width: 744px
+            width: 704px
             margin: 0.5 auto
 
 @media screen and (min-width: 1024px) and (max-device-height : 768px) and (orientation: landscape)
