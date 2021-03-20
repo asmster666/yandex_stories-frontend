@@ -3,17 +3,31 @@ import './vote_result.sass';
 
 export default class VoteResult extends Component {
 
-    renderVoteResult(alias, data) {
-        console.log(`${alias} ${data}`);
+    toggleTheme() {
+        let wrap = document.querySelector("#vote_result");
+        let winners = document.querySelector(".winners");
+        if(wrap.classList.contains("theme_light")) {
+            wrap.classList.add("theme_dark");
+            winners.classList.add("winners_dark");
+
+            wrap.classList.remove("theme_light");
+            winners.classList.remove("winners_light"); 
+        } else {
+            wrap.classList.add("theme_light");
+            winners.classList.add("winners_light");
+            
+            wrap.classList.remove("theme_dark");
+            winners.classList.remove("winners_dark");
+        }
     }
 
     render() {
         return (
-            <div id="vote_result" onLoad={this.renderVoteResult("it will be", "vote results")}>
+            <div id="vote_result" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="vote_result_h1">Самый 🔎 внимательный разработчик</h1>
                 <p id="vote_result_p">Спринт № 213</p> 
 
-                <div className="winners">
+                <div className="winners winners_light">
                     <div id="item5_v" className="winner_item">
                         <div className="wrapper">
                             <div className="emodji">👍</div>

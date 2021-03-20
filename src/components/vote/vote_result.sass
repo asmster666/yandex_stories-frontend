@@ -7,7 +7,6 @@
     #vote_result_h1                   
        width: 70%
     #vote_result_p 
-       color: #BFBFBF
        width: 70%
 
     .winners 
@@ -41,41 +40,94 @@
                     background-image: url('../../img/vote_result/175323d766149861adfb2ef4f9d90481.jpeg')
                 
                 p
-                    color: rgb(38, 28, 0, 1)
                     text-align: center
                     font-weight: 500
-                #votes
-                    color: #BFBFBF
 
         #item1
-            z-index: -2
+            position: relative
             .place_1
-                background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
                 #num1
                     margin: 0 auto
         #item2
-            z-index: -5
             .place_2
-                background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
                 #num2
                     margin-top: 0
         #item3
-            z-index: -3
             .place_3
-                background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
                 #num3
                     margin-top: 0
                     margin-left: 0 
         #item5_v
+            position: absolute 
             z-index: 5
             .wrapper
                 hr
-                    background: #261C00
                     height: 1px
                     width: 90%
 
 
-            
+.theme_light 
+    background-color: white
+    #vote_result_p 
+       color: #BFBFBF
+
+.theme_dark
+    background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%)
+    #vote_result_h1
+        color: white
+    #vote_result_p
+        color: #918F8A
+
+.winners_light
+    .winner_item
+        .wrapper
+            p
+                color: rgb(38, 28, 0, 1)
+            #votes
+                color: #BFBFBF
+
+        .win_place
+            color: #261C00
+    #item1
+        .place_1
+            background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
+    #item2 
+        .place_2
+            background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+    #item3 
+        .place_3
+            background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+    #item5_v
+        .wrapper
+                hr
+                    background: #261C00
+
+
+.winners_dark
+    .winner_item
+        .wrapper
+            .pic
+                filter: grayscale(100%)
+            p
+                color: white
+            #age
+                color: #918F8A
+
+        .win_place
+            color: white
+    #item1
+        .place_1
+            background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, #FFA300 0%, #2D1C00 100%)
+    #item2 
+        .place_2
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%)
+    #item3 
+        .place_3
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%) 
+    #item5_v
+        .wrapper
+                hr
+                    background: white          
 
 
 @media screen and (max-width: 320px)
@@ -122,7 +174,8 @@
                 #num3, #num1, #num2
                     padding-top: 0.5rem
 
-        #item1 
+        #item1
+            position: relative
             margin-left: -16px   
             align-items: center
             .place_1
@@ -146,8 +199,10 @@
         #item5_v
             display: flex
             justify-content: flex-end
+            position: absolute 
             z-index: 1
-            right: 50%
+            margin-left: 28%
+            margin-top: 70%
             height: 162px
             .wrapper
                 width: 86.7%
@@ -218,6 +273,20 @@
         #vote_result #item3
             .place_3    
                 height: 292px
+        #item5_v
+            margin-top: 70%
+            margin-left: 30%
+            height: 210px
+            .wrapper
+                width: 86.7%
+                .emodji
+                    position: absolute
+                    z-index: 1
+                p
+                    font-size: 16px
+                    margin-bottom: 0
+                #votes
+                    font-size: 16px
 
 @media screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
     /* vertical */
@@ -280,4 +349,18 @@
         #vote_result #item3
             .place_3    
                 height: 356px
+        #item5_v
+            margin-top: 50%
+            margin-left: 32%
+            height: 369px
+            .wrapper
+                width: 86.7%
+                .emodji
+                    position: absolute
+                    z-index: 1
+                p
+                    font-size: 24px
+                    margin-bottom: 0
+                #votes
+                    font-size: 24px
 
