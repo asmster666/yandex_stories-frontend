@@ -23,6 +23,8 @@
             .pic
                 background-size: cover
                 background-position: center
+        .second_user
+            padding-bottom: 1rem
 
 .theme_light
     background-color: white
@@ -30,6 +32,8 @@
         color: #BFBFBF
 
     .users
+        hr
+            background-color: #261C00
         .user
             .info_wrap
                 #name
@@ -45,6 +49,8 @@
         color: #918F8A
     
     .users
+        hr
+            background-color: white
         .user
             .info_wrap
                 #name
@@ -69,8 +75,6 @@
 
 .columns_dark
     .column
-        .num
-            color: #918F8A
         .col
             ._col
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 93.3% at 38.75% 72.1%, #000000 0%, #231900 0.01%, #4D4D4D 100%)
@@ -87,7 +91,7 @@
     /* vertical */
     #chart_h1
         font-size: 26px
-        margin-top: 0.5rem 
+        padding-top: 0.5rem 
         margin-left: 3rem
     #chart_p
         font-size: 16px
@@ -162,6 +166,7 @@
                 margin-right: 0.5rem
 
             .info_wrap
+                margin-top: -0.5rem
                 margin-left: 0.2rem
                 align-items: flex-start
                 #name
@@ -169,13 +174,14 @@
                     margin-bottom: 0.5rem
         
         .first_user
+            padding-bottom: 0.5rem
             .pic
                 background-image: url('../../img/img_leaders/3119ecea1e114df95ec64c5c43334c0b.jpeg')
         
         hr
             width: 90%
             margin: 0.5rem auto
-            height: 2px
+            height: 1px
 
         .second_user
             .pic
@@ -185,7 +191,7 @@
     /* horizontal */
     #chart_h1
         font-size: 26px
-        margin: 0.5rem auto
+        margin: 0 auto
         text-align: center
     #chart_p
         font-size: 16px
@@ -195,8 +201,14 @@
     .columns
         width: 95%
         height: 206px /* 70% - 24px */
-        margin: 0.2rem 0.8rem 0 0.8rem
+        margin: 0.3rem 0.8rem 0 0.8rem
+        align-items: flex-end
         .column
+            .num
+                margin-bottom: 0
+                margin: 0 auto
+            .date   
+                margin: 0.2rem auto
             .col
                 width: 40px
                 height: 150px
@@ -230,6 +242,7 @@
             .black
                 font-size: 14px
                 margin-bottom: 0
+                margin: 0 auto
             .col
                 .gold
                     width: 40px 
@@ -377,18 +390,21 @@
     #chart 
         #chart_h1
             font-size: 30px
-            margin-top: 0.5rem
+            padding-top: 0.2rem
             text-align: center
         #chart_p
             font-size: 20px 
-            margin-top: 0 
+            margin-top: -0.5rem 
             text-align: center  
 
         .columns
             width: 95%
             height: 226px /* 70% - 4px */
             margin: 1rem 1rem 0 1rem
+            align-items: flex-end
             .column
+                .num, .date
+                    margin: 0.5rem auto
                 .col
                     width: 40px
                     height: 170px
@@ -421,6 +437,7 @@
             .seven
                 .black
                     font-size: 18px
+                    margin: 0.5rem auto
                 .col
                     .gold
                         width: 40px 
@@ -443,6 +460,7 @@
         .users
             width: 80%
             margin: 0.5rem auto
+            padding-bottom: 0.2rem
             .user
                 display: flex
                 justify-content: center
@@ -470,10 +488,11 @@
     /* vertical */
     #chart_h1
         font-size: 42px
-        margin-top: 1rem 
+        padding-top: 0.5rem 
         margin-left: 6.5rem
     #chart_p
         font-size: 32px
+        margin-top: -0.5rem
         margin-left: 6.5rem 
  
     .columns
@@ -530,6 +549,7 @@
         width: 90%
         margin: 0.2rem auto
         flex-direction: column
+        padding-bottom: 0.5rem
         .user
             width: 90%
             display: flex
@@ -641,6 +661,7 @@
     .users
         width: 80%
         margin: 0.5rem auto
+        padding-bottom: 0.5rem
         .user
             display: flex
             justify-content: center
@@ -670,17 +691,17 @@
 @media screen and (min-width: 1366px) and (max-width: 1890px)
     /* horizontal */
     #chart_h1
-        font-size: 52px
-        margin-top: 1rem
+        font-size: 48px
         text-align: center 
     #chart_p
-        font-size: 36px
+        font-size: 32px
+        margin-top: -1rem
         text-align: center
 
     .columns
         width: 95%
-        height: 706px /* 70% - 24px */
-        margin: 1rem 1.5rem 0 1.5rem
+        height: 576px /* 70% - 24px */
+        margin: -3rem 1.5rem 0 1.5rem
         .column
             align-items: center
             .num
@@ -739,7 +760,8 @@
     
     .users
         width: 80%
-        margin: 0.5rem auto
+        margin: -1rem auto
+        padding-bottom: 0.5rem
         .user
             display: flex
             justify-content: center
