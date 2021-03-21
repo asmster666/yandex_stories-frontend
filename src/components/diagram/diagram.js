@@ -27,7 +27,7 @@ export default class Diagram extends Component {
                 <h1 id="diagram_h1">Размер коммитов</h1>
                 <p id="diagram_p">Спринт № 213</p> 
 
-                <div className="diagram">
+                <div className="diagram diagram_light">
                     <div className="out_circle">
                         <div className="first_piece">
                             <div className="side_part left"></div>
