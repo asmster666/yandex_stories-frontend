@@ -1,3 +1,23 @@
+$darkTheme: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%);
+
+$diagramLight1: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%);
+$diagramShadowLight1: box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.9);
+$diagramLight2: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%);
+$diagramShadowLight2: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.4);
+$diagramLight3: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%);
+$diagramShadowLight3: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(105, 105, 105, 0.2)
+$diagramLight4: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%);
+$diagramShadowLight4: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(131, 131, 131, 0.6);
+
+$diagramDark1: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 163, 0, 0.8) 71.88%, rgba(91, 58, 0, 0.8) 100%);
+$diagramShadowDark1: 0px 0px 20px -8px rgba(248, 158, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 162, 0, 0.9)
+$diagramDark2: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(99, 63, 0, 0.5) 72.92%, rgba(15, 9, 0, 0.5) 100%);
+$diagramShadowDark2: 0px 0px 20px -8px rgba(147, 93, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(202, 129, 0, 0.9);
+$diagramDark3: radial-gradient(100% 100% at 50% 0%, rgba(151, 151, 151, 0.5) 0%, rgba(41, 41, 41, 0.5) 100%);
+$diagramShadowDark3: inset -1px 1px 1px rgba(255, 255, 255, 0.5);
+$diagramDark4: radial-gradient(100% 100% at 50% 0%, rgba(62, 62, 62, 0.5) 0%, rgba(40, 40, 40, 0.5) 100%);
+$diagramShadowDark4: inset -1px 1px 1px rgba(255, 255, 255, 0.5);
+
 #diagram    
     margin: 0
     padding: 0
@@ -79,20 +99,20 @@
                 .counter 
                     color: #BFBFBF
         .first
-            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
-            box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.9)
+            background: $diagramLight1
+            box-shadow: $diagramShadowLight1
         .second
-            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
-            box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.4)
+            background: $diagramLight2
+            box-shadow: $diagramShadowLight2
         .third
-            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
-            box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(105, 105, 105, 0.2)
+            background: $diagramLight3
+            box-shadow: $diagramShadowLight3
         .forth
-            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
-            box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(131, 131, 131, 0.6)
+            background: $diagramLight4
+            box-shadow: $diagramShadowLight4
 
 .theme_dark
-    background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%)
+    background: $darkTheme
     #diagram_h1 
         color: white
     #diagram_p
@@ -105,17 +125,17 @@
                 .counter 
                     color: #918F8A
         .first
-            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 163, 0, 0.8) 71.88%, rgba(91, 58, 0, 0.8) 100%)
-            box-shadow: 0px 0px 20px -8px rgba(248, 158, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 162, 0, 0.9)
+            background: $diagramDark1
+            box-shadow: $diagramShadowDark1
         .second
-            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(99, 63, 0, 0.5) 72.92%, rgba(15, 9, 0, 0.5) 100%)
-            box-shadow: 0px 0px 20px -8px rgba(147, 93, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(202, 129, 0, 0.9)
+            background: $diagramDark2
+            box-shadow: $diagramShadowDark2
         .third
-            background: radial-gradient(100% 100% at 50% 0%, rgba(151, 151, 151, 0.5) 0%, rgba(41, 41, 41, 0.5) 100%)
-            box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5)
+            background: $diagramDark3
+            box-shadow: $diagramShadowDark3
         .forth
-            background: radial-gradient(100% 100% at 50% 0%, rgba(62, 62, 62, 0.5) 0%, rgba(40, 40, 40, 0.5) 100%)
-            box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5)
+            background: $diagramDark4
+            box-shadow: $diagramShadowDark4
 
 .diagram_light 
     background-color: white
