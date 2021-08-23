@@ -23,7 +23,7 @@ export default class Chart extends Component {
 
     render() {
         return (
-            <div id="chart" className="theme_light" onClick={this.toggleTheme}>
+            <article id="chart" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="chart_h1">Коммиты</h1>
                 <p id="chart_p">Спринт № 213</p>    
 
@@ -110,7 +110,7 @@ export default class Chart extends Component {
                         </div>
                     </div>
                 </div>
-            </div> 
+            </article> 
         )
     } 
 }

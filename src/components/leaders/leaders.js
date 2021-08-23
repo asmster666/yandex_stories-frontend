@@ -6,8 +6,8 @@ export default class Leaders extends Component {
     toggleTheme() {
         let wrap = document.querySelector("#leaders");
         let winners = document.querySelector(".winners");
-        if(wrap.classList.contains("theme_light")) {
-            wrap.classList.add("theme_dark");
+        if(wrap.classList.contains("theme_light")) { 
+            wrap.classList.add("theme_dark"); 
             winners.classList.add("leaders_dark");
 
             wrap.classList.remove("theme_light");
@@ -17,15 +17,15 @@ export default class Leaders extends Component {
             winners.classList.add("leaders_light");
             
             wrap.classList.remove("theme_dark");
-            winners.classList.remove("leaders_dark");
+            winners.classList.remove("leaders_dark"); 
         }
     }
 
     render() {
         return (
-            <div id="leaders" className="theme_light" onClick={this.toggleTheme}>
+            <article id="leaders" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="leaders_h1">Больше всего ️коммитов</h1>
-                <p id="leaders_p">Спринт № 213</p>
+                <p id="leaders_p">Спринт № 213</p> 
 
                 <div className="winners leaders_light">
                     <div id="item5" className="winner_item">
@@ -81,7 +81,7 @@ export default class Leaders extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         )
     }
 }

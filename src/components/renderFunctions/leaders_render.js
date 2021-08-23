@@ -8,7 +8,9 @@ const LeadersRender = () => {
 
     data = ResponseWork(alias, data);
     
-    useEffect(() => {wrapItem(data.users)}); 
+    useEffect(() => {
+        wrapItem(data.users)
+    }); 
 
     return (
         <div id="leaders">
@@ -47,12 +49,12 @@ function wrapItem(array) {
             if(window.innerWidth > window.innerHeight) {
                 displayWinners(array_values, kids_array, winner_item); 
                 getWinPlace(array_values, winner_item);
-                winnersRightOrder(kids_array);
+                //winnersRightOrder(kids_array);
             } else {
                 if(window.innerWidth < window.innerHeight) {
                     displayWinners(array_values, kids_array, winner_item, 3);
                     getWinPlace(array_values, winner_item);
-                    winnersRightOrder(kids_array);
+                    //winnersRightOrder(kids_array);
                 }
             }
             console.log(kids_array);
@@ -114,19 +116,20 @@ function addEmoji(item, emoji) {
     }
 };  // not work properly
 
-function winnersRightOrder(parent) {
-    let kid1, kid3
-    for(let i = 0; i < parent.length; i++) {
-        if(parent[i].classList.contains("item1")) {
-            kid1 = parent[i]
-        } 
+// function winnersRightOrder(parent) {
+//     let kid1, kid3;
+//     for(let i = 0; i < parent.length; i++) {
+//         if(parent[i].classList.contains("item1")) {
+//             kid1 = parent[i]
+//         } 
 
-        if(parent[i].classList.contains("item3")) {
-            kid3 = parent[i]
-        } 
-    }
+//         if(parent[i].classList.contains("item3")) {
+//             kid3 = parent[i + 1]
+//         } 
 
-    parent.insertBefore(kid1, kid3);
-}
+//         kid1 = parent[i + 1];
+//         kid3 = parent[i];
+//     }
+// }
 
 export default LeadersRender;

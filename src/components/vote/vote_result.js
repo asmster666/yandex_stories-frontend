@@ -23,7 +23,7 @@ export default class VoteResult extends Component {
 
     render() {
         return (
-            <div id="vote_result" className="theme_light" onClick={this.toggleTheme}>
+            <article id="vote_result" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="vote_result_h1">Самый 🔎 внимательный разработчик</h1>
                 <p id="vote_result_p">Спринт № 213</p> 
 
@@ -70,7 +70,7 @@ export default class VoteResult extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
         )
     }

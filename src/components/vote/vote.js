@@ -17,13 +17,13 @@ export default class Vote extends Component {
             codersVote.classList.add("coders_vote_light");
             
             wrap.classList.remove("theme_dark");
-            codersVote.classList.remove("coders_vote_dark");
+            codersVote.classList.remove("coders_vote_dark"); 
         }
     }
 
     render() {
         return(
-            <div id="vote" className="theme_light" onClick={this.toggleTheme}>
+            <article id="vote" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="vote_h1">Самый 🔎 внимательный разработчик</h1>
                 <p id="vote_p">Спринт № 213</p>   
 
@@ -90,7 +90,7 @@ export default class Vote extends Component {
                         </div>
                     </div> 
                 </div>
-            </div>
+            </article>
         )
     }
 }

@@ -23,7 +23,7 @@ export default class Diagram extends Component {
 
     render() {
         return(
-            <div id="diagram" className="theme_light" onClick={this.toggleTheme}>
+            <article id="diagram" className="theme_light" onClick={this.toggleTheme}>
                 <h1 id="diagram_h1">Размер коммитов</h1>
                 <p id="diagram_p">Спринт № 213</p> 
 
@@ -99,7 +99,7 @@ export default class Diagram extends Component {
                         </div>
                     </div> 
                 </div>
-            </div>
+            </article>
         )
     }
 }

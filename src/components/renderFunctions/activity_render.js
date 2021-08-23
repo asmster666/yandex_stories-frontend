@@ -3,7 +3,7 @@ import ResponseWork from './response_work';
 import '../activity/activity.sass';
 
 const ActivityRender = () => {
-    let alias = "activity";
+    let alias = "activity"; 
     let data = {};
 
     data = ResponseWork(alias, data);
@@ -13,7 +13,7 @@ const ActivityRender = () => {
     return(
         <div id="activity">
             <h1 id="activity_h1">{data.title}</h1>
-            <p id="activity_p">{data.subtitle}</p> 
+            <p id="activity_p">{data.subtitle}</p>  
 
             <div id="grid"></div>
         </div>

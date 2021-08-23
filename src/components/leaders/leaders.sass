@@ -2,7 +2,7 @@
     margin: 0
     padding: 0
     width: 100%
-    height: 100%
+    height: 100vh
 
     #leaders_h1                   
        width: 70%
@@ -46,12 +46,12 @@
                     font-weight: bold
                     font-size: 700
         #item1
-            z-index: 1
+            z-index: 2
             .place_1
                 #num1
                     margin: 0 auto
         #item2
-            z-index: -5
+            z-index: 1
             .place_2
                 #num2
                     margin-top: 0
@@ -92,6 +92,12 @@
     #item3 
         .place_3
             background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+    #item4
+        .place_4
+            background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+    #item5
+        .place_5
+            background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
 
 .leaders_dark
     .winner_item
@@ -113,6 +119,12 @@
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%)
     #item3 
         .place_3
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%)
+    #item4
+        .place_4
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%)
+    #item5
+        .place_5
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%)
 
 
@@ -171,7 +183,7 @@
             .place_2
                 height: 245px
                 #num2
-                    margin-left: 13%
+                    margin-left: 13%   
         #item3
             .wrapper
                 margin-left: -0.2rem
@@ -224,7 +236,7 @@
             .win_place
                 display: flex
                 justify-content: flex-start
-                z-index: -1
+                z-index: 1
                 #num5, #num3, #num1, #num2, #num4
                     font-size: 21px
                     padding-top: 0.5rem
@@ -265,7 +277,7 @@
                 #num5
                     margin: 0 auto
 
-@media screen and (min-width: 321px) and (max-width: 414px) 
+@media screen and (min-width: 321px) and (max-width: 415px) 
     /* vertical */
     #leaders_h1 
         margin: 1rem 0 0 0.5rem
@@ -277,7 +289,7 @@
     .winners 
         margin: 2rem 1rem 0 1rem
 
-        #fifth, #forth 
+        #item5, #item4 
             display: none
         
         .winner_item 
@@ -304,7 +316,7 @@
             .win_place
                 display: flex
                 justify-content: flex-start
-                z-index: -1
+                z-index: 1
                 #num3, #num1, #num2
                     padding-top: 1rem
 
@@ -366,7 +378,7 @@
             .win_place
                 display: flex
                 justify-content: flex-start
-                z-index: -1
+                z-index: 1
                 #num5, #num3, #num1, #num2, #num4
                     font-size: 24px
                     padding-top: 0.5rem
@@ -377,6 +389,7 @@
             .place_1
                 height: 98px
         #item2
+            z-index: 2
             margin-left: -20px  
             .wrapper
                 margin-left: 20px   
@@ -391,6 +404,7 @@
             .place_3
                 height: 78px
         #item4
+            z-index: 0
             margin-left: -20px
             .wrapper
                 margin-left: 20px 
@@ -421,12 +435,12 @@
         margin: 2rem 1rem 0 1.5rem
         padding-left: 1rem
 
-        #fifth, #forth 
+        #item5, #item4
             display: none
 
         .winner_item 
             width: 34% 
-            margin-bottom: -10px
+            margin-bottom: 0
             display: flex
 
             .wrapper 
@@ -447,13 +461,13 @@
                 #age
                     font-size: 28px
             
-            #leaders .win_place
+            .win_place
                 display: flex
                 justify-content: flex-start
-                z-index: -1
+                z-index: 1
                 #num3, #num1, #num2
                     padding-top: 1.5rem
-                    font-size: 28px
+                    font-size: 32px
 
         #item1 
             margin-left: -30px   
@@ -559,7 +573,7 @@
             .win_place
                 display: flex
                 justify-content: flex-start
-                z-index: -1
+                z-index: 1
                 #num5, #num3, #num1, #num2, #num4
                     font-size: 32px
                     padding-top: 0.5rem
@@ -584,6 +598,7 @@
             .place_3
                 height: 188px
         #item4
+            z-index: 0
             margin-left: -20px
             .wrapper
                 margin-left: 13% 
@@ -639,7 +654,7 @@
             .win_place
                 display: flex
                 justify-content: flex-start
-                z-index: -1
+                z-index: 1
                 #num5, #num3, #num1, #num2, #num4
                     font-size: 42px
                     padding-top: 1.5rem
@@ -664,6 +679,7 @@
             .place_3
                 height: 278px
         #item4
+            z-index: 0
             margin-left: -20px
             .wrapper
                 margin-left: 13% 

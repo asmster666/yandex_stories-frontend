@@ -20,6 +20,9 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: ['@babel/preset-env', '@babel/preset-react'],
+                        plugins: [
+                            '@babel/plugin-proposal-class-properties',
+                        ]
                     }
                 }
             },
@@ -52,7 +55,7 @@ module.exports = {
         new webpack.ProgressPlugin(),
         new CssMinimizerPlugin(),
         new MiniCssExtractPlugin(),
-        new HtmlWebpackPlugin({template: './public/index.html'})
+        new HtmlWebpackPlugin({template: './public/index.html'}),
     ],
     output: {
         filename: "firstwebpack.bundle.js",
