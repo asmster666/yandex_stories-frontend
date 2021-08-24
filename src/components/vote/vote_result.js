@@ -23,9 +23,9 @@ export default class VoteResult extends Component {
 
     render() {
         return (
-            <article id="vote_result" className="theme_light" onClick={this.toggleTheme}>
-                <h1 id="vote_result_h1">Самый 🔎 внимательный разработчик</h1>
-                <p id="vote_result_p">Спринт № 213</p> 
+            <div className="container theme_light" onClick={this.toggleTheme}>
+                <h2 className="h2_styles">Самый 🔎 внимательный разработчик</h2>
+                <p className="p_styles">Спринт № 213</p> 
 
                 <div className="winners winners_light">
                     <div id="item5_v" className="winner_item">
@@ -70,7 +70,7 @@ export default class VoteResult extends Component {
                         </div>
                     </div>
                 </div>
-            </article>
+            </div>
 
         )
     }
