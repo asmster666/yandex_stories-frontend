@@ -1,0 +1,417 @@
+$imgFolder: '../../img/img_vote';
+
+.vote
+    margin: 0
+    padding: 0
+    width: 100%
+
+    .vote_h2                   
+       width: 70%
+    .vote_p 
+       width: 70%
+    
+    .coders
+        display: flex
+
+        .first_column, .second_column, .third_column 
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+
+        .second_column
+            justify-content: space-between
+            .up_wrap
+                width: 95%
+                display: flex
+                align-items: center
+                height: 50%
+                .button_up
+                    .first_cirle
+                        position: absolute
+                        .second_cirle
+                            position: relative
+                            border-radius: 50%
+                            .svg
+                                position: absolute
+
+                .gold_wrap
+                    width: 95%
+                    border-radius: 6px
+
+            .down_wrap
+                width: 95%
+                margin-bottom: 0
+                display: flex
+                height: 50%
+                .button_down
+                    .first_cirle
+                        position: absolute
+                        .second_cirle
+                            position: relative
+                            border-radius: 50%
+                            .svg
+                                position: absolute
+                .grey_wrap
+                    width: 95%
+                    border-radius: 6px
+
+        .coder_item
+            .emodji
+                position: absolute
+                display: none
+            .pic
+                position: relative
+                margin: 0 auto
+                background-position: center
+                background-size: cover
+                border-radius: 100px
+            #pic1
+                background-image: url(`${$imgFolder}/b673e929deea02c1dc2bded07564f8c1.png`)
+            #pic2
+                background-image: url(`${$imgFolder}/149dd0383a3941d8d546ab22159ee9fd.png`)
+            #pic3
+                background-image: url(`${$imgFolder}/eff4b44dbf035da510b85ecc608c88a5.jpeg`)
+            #pic4
+                background-image: url(`${$imgFolder}/175323d766149861adfb2ef4f9d90481.jpeg`)
+            #pic5
+                background-image: url(`${$imgFolder}/43061ee611b1c55700345d39a333dd4b.png`)
+            #pic6
+                background-image: url(`${imgFolder}/9d91a28ad1a2943661f7faccc5431012.jpeg`)
+            #pic7
+                background-image: url(`${imgFolder}/ab4a68d09711a848d92e74ec70ec4694.jpeg`)
+            #pic8
+                background-image: url(`${imgFolder}/9b90d7c2f7abe2bcd33b2ccc866ee9c1.jpeg`)
+            p
+                font-weight: 500
+                width: 90%
+                margin: 0rem auto
+                text-align: center
+    
+    @media screen and (min-width: 319px)
+        .vote_h2
+            width: 80%
+            font-size: 32px
+            margin-left: 2rem 
+        .vote_p
+            width: 80%
+            font-size: 18px
+            margin-top: 1rem
+            margin-left: 2rem
+        
+        .coders
+            width: 95%
+            margin: 1rem 0.7rem 0.2rem 0.7rem
+            padding-left: 1rem
+            height: 564px
+
+            .first_column, .second_column, .third_column
+                width: 30% 
+                flex-direction: column
+                padding: 1rem 0 1rem 0
+                .item2, .item3
+                    display: block
+
+            .second_column
+                margin-top: -2rem
+                padding: 0 0.2rem 0 0.2rem 
+                .up_wrap
+                    flex-direction: column 
+                    .button_up
+                        width: 74px
+                        height: 74px
+                        margin-left: -0.3rem
+                        margin-bottom: 0.5rem
+                        .first_cirle
+                            width: 64px
+                            height: 64px
+                            border-radius: 100px
+                            .second_cirle
+                                width: 54px
+                                height: 54px
+                                margin: 5px auto
+                                .svg
+                                    width: 21px
+                                    height: 13px
+                                    margin-top: 20px
+                                    margin-left: 17px
+                    .gold_wrap
+                        margin-top: 0.5rem
+                        padding: 0.5rem 0 0.5rem 0
+                .down_wrap
+                    margin-top: 3rem 
+                    flex-direction: column
+                    align-items: center
+                    .button_down
+                        margin-left: -0.3rem
+                        margin-top: 5.5rem 
+                        width: 74px
+                        height: 74px
+                        .first_cirle
+                            width: 64px
+                            height: 64px
+                            border-radius: 100px
+                            .second_cirle
+                                width: 54px
+                                height: 54px
+                                margin: 5px auto
+                                .svg
+                                    width: 21px
+                                    height: 13px
+                                    margin-top: 20px
+                                    margin-left: 17px
+                    .grey_wrap 
+                        margin-top: 0.5rem
+                        padding: 0.5rem 0 0.5rem 0 
+            
+            .third_column
+                margin-top: 1rem
+                flex-direction: column 
+                flex-wrap: nowrap
+
+            .coder_item
+                width: 95% 
+                height: 30% 
+                .pic
+                    width: 74px
+                    height: 74px
+                p
+                    font-size: 18px  
+                    margin-left: 0 
+    @media screen and (min-width: 760px)
+        .vote_h2
+            font-size: 34px
+            margin-left: 3rem
+            padding-top: 1rem 
+        .vote_p
+            font-size: 22px 
+            margin-left: 3rem
+        
+        .coders
+            margin: 4rem 1rem 0.2rem 1rem
+            height: 724px
+
+            .first_column, .second_column, .third_column
+                width: 33% 
+
+            .second_column
+                .up_wrap
+                    .button_up
+                        width: 104px
+                        height: 104px
+                        margin-bottom: 0.5rem
+                        .first_cirle
+                            width: 94px
+                            height: 94px
+                            border-radius: 100px
+                            .second_cirle
+                                width: 74px
+                                height: 74px
+                                margin: 10px auto
+                                .svg
+                                    width: 25px
+                                    height: 15px
+                                    margin-top: 28px
+                                    margin-left: 24px
+                    .gold_wrap
+                        margin-top: 0.5rem
+                        padding: 1rem 0.5rem 1rem 0.5rem 
+                .down_wrap
+                    margin-top: 5rem 
+                    .button_down
+                        margin-top: 8rem 
+                        width: 104px
+                        height: 104px
+                        margin-bottom: 0.5rem
+                        .first_cirle
+                            width: 94px
+                            height: 94px
+                            border-radius: 100px
+                            .second_cirle
+                                width: 74px
+                                height: 74px
+                                margin: 10px auto
+                                .svg
+                                    width: 25px
+                                    height: 15px
+                                    margin-top: 28px
+                                    margin-left: 24px
+                    .grey_wrap 
+                        padding: 1rem 0.5rem 1rem 0.5rem 
+
+            .coder_item
+                .pic
+                    width: 104px
+                    height: 104px
+                p
+                    font-size: 26px  
+                    margin-left: 0.6rem 
+    @media screen and (min-width: 1900px)
+        .vote_h2
+            font-size: 52px
+            text-align: center
+            margin: 0 auto
+            padding-top: 2rem
+        .vote_p
+            font-size: 42px 
+            text-align: center
+            margin: 1rem auto
+        
+        .coders
+            width: 100%
+            margin: 2rem 4.5rem 0 4.5rem
+
+            .first_column, .second_column, .third_column
+                width: 34%
+
+            .first_column
+                width: 20%
+                .item2, .item3
+                    display: none
+
+            .second_column
+                width: 34%
+                .up_wrap
+                    width: 85%
+                    margin-left: -2.5rem
+                    padding-top: 1rem
+                    flex-direction: row-reverse 
+                    .button_up
+                        margin-top: 0.5rem
+                        margin-left: 4rem
+                        width: 164px 
+                        height: 164px 
+                        .first_cirle
+                            width: 144px
+                            height: 144px
+                            border-radius: 100px
+                            .second_cirle
+                                width: 124px
+                                height: 124px
+                                margin: 10px auto
+                                .svg
+                                    width: 45px
+                                    height: 22px
+                                    margin-top: 50px
+                                    margin-left: 38px
+                    .gold_wrap
+                        width: 40%
+                        margin-top: 0.5rem
+                        padding: 1.5rem 0 1.5rem 0
+                .down_wrap
+                    align-items: flex-start
+                    margin-top: 1.5rem
+                    width: 85%
+                    .button_down
+                        margin-top: 3rem
+                        margin-left: 4rem
+                        width: 164px
+                        height: 164px
+                        .first_cirle
+                            width: 144px
+                            height: 144px
+                            border-radius: 100px
+                            .second_cirle
+                                width: 124px
+                                height: 124px
+                                margin: 10px auto
+                                .svg
+                                    width: 45px
+                                    height: 22px
+                                    margin-top: 50px
+                                    margin-left: 38px
+                    .grey_wrap
+                        width: 40% 
+                        margin-left: 0
+                        padding: 1.5rem 0 1.5rem 0
+
+            .third_column
+                width: 30% 
+                margin-top: 2.5rem
+                flex-flow: column wrap
+                .item6, .item7, .item8
+                    padding: 0.5rem 0 0 0
+                    height: 40% 
+
+            
+            .coder_item
+                width: 60%
+                .pic
+                    width: 164px 
+                    height: 164px 
+                p
+                    font-size: 42px
+
+
+.theme_light
+    background-color: white
+    #vote_p
+        color: #BFBFBF
+
+.theme_dark
+    background: $darkTheme
+    #vote_h1  
+        color: white
+    #vote_p
+        color: #918F8A
+
+.vote_light
+    .second_column
+        .up_wrap
+            .button_up
+                .first_cirle
+                    border: 2px solid #C4C4C4
+                    background-color: white
+                    .second_cirle   
+                        background-color: #C4C4C4
+                        .svg
+                            background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+            .gold_wrap
+                background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
+
+        .down_wrap
+            .button_down
+                .first_cirle
+                    border: 2px solid #F4B000
+                    background-color: white
+                    .second_cirle   
+                        background-color: #F4B000
+                        .svg
+                            background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)  
+            .grey_wrap
+                background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+    
+    .coder_item
+        p
+            color: #261C00
+
+.vote_dark
+    .second_column
+        .up_wrap
+            .button_up
+                .first_cirle
+                    border: 2px solid #C4C4C4
+                    background-color: white
+                    .second_cirle   
+                        background-color: #C4C4C4
+                        .svg
+                            background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+            .gold_wrap
+                background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
+
+        .down_wrap
+            .button_down
+                .first_cirle
+                    border: 2px solid white
+                    background-color: white
+                    .second_cirle   
+                        background-color: white
+                        .svg
+                            background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)  
+            .grey_wrap
+                background: radial-gradient(85.62% 148.33% at 49.85% 100%, rgba(68, 58, 42, 0.7864) 0%, rgba(0, 0, 0, 0.8) 100%)
+    
+    .coder_item
+        .pic
+            filter: grayscale(100%)
+        p
+            color: white
