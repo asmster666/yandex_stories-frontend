@@ -13,14 +13,14 @@ const Chart = () => {
     const [lightTheme, toggleTheme] = useState(false);
 
     return (
-        <article id="chart"
-            className={lightTheme ? "theme_light" : "theme_dark"}
+        <div 
+            className={`chart container ${lightTheme ? "theme_light" : "theme_dark"}`}
             onClick={() => toggleTheme(!lightTheme)}
         >
-            <h1 id="chart_h1">Коммиты{chart.title}</h1>
-            <p id="chart_p">Спринт № 213{chart.subtitle}</p>
+            <h1 className={`h2_styles ${lightTheme ? '' : 'h2_dark'}`}>Коммиты{chart.title}</h1>
+            <p className={`p_styles ${lightTheme ? 'p_light' : 'p_dark'}`}>Спринт № 213{chart.subtitle}</p>
 
-            <div className={lightTheme ? "columns columns_light" : "columns columns_dark"}>
+            <div className={`columns ${lightTheme ? "columns_light" : "columns_dark"}`}>
                 {
                     chart.values.map(chartItem => (
                         <ChartColumn value={chartItem.value} title={chartItem.title} active={chartItem.active} />
@@ -28,14 +28,14 @@ const Chart = () => {
                 }
             </div>
 
-            <div className={lightTheme ? "users users_light" : "users users_dark" }>
+            <div className={`users ${lightTheme ? "users_light" : "users_dark"}` }>
                 {
                     chart.users.map(user => (
                         <ChartUser avatar={user.avatar} name={user.name} valueText={user.valueText} />
                     ))
                 }
             </div>
-        </article>
+        </div>
     )
 }
 

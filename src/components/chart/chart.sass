@@ -1,0 +1,546 @@
+$imgPath: '../../img/img_leaders';
+
+.chart
+    .columns
+        display: flex
+        justify-content: space-evenly
+        .column
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            .col 
+                display: flex
+                align-items: flex-end   
+    
+    .users
+        display: flex
+        justify-content: space-around  
+        height: 20%
+        .user
+            .pic
+                background-size: cover
+                background-position: center
+        .second_user
+            padding-bottom: 1rem
+        
+    @media screen and (min-width: 319px)
+        .columns
+            width: 95%
+            height: 456px /* 70% - 24px */
+            margin: 0.2rem 0.8rem 0 -8.2rem
+            .column
+                align-items: center
+                margin-left: 1.2rem
+                font-size: 18px
+                .col
+                    width: 50px
+                    height: 200px
+                    ._col
+                        width: 50px 
+                .date
+            .first, .second, .third
+                visibility: 0
+            .four
+                .col
+                    ._col
+                        height: 148px
+            .five
+                .col
+                    ._col
+                        height: 166px
+            .six
+                .col
+                    ._col
+                        height: 140px
+            .seven
+                .black
+                    font-size: 18px
+                .col
+                    .gold
+                        width: 50px 
+                        height: 182px
+                        margin-bottom: 0
+            .eight
+                .num
+                    opacity: 0
+                .col
+                    ._col
+                        height: 20px
+            .nine
+                .num
+                    opacity: 0
+                .col
+                    ._col
+                        height: 20px
+        .users
+            width: 90%
+            margin: 0.2rem auto
+            flex-direction: column
+            .user
+                width: 90%
+                display: flex
+                justify-content: space-evenly
+                .pic
+                    width: 56px
+                    height: 56px
+                    border-radius: 50%
+                    margin-top: 0.6rem
+                    margin-right: 0.5rem
+
+                .info_wrap
+                    margin-left: 0.2rem
+                    align-items: flex-start 
+                    font-size: 20px
+                    #name
+                        margin-top: 0.5rem
+                        margin-left: 0
+                        margin-bottom: 0.5rem
+            
+            .first_user
+                margin-bottom: 0.3rem
+                .pic
+                    background-image: url('#{imgPath}/3119ecea1e114df95ec64c5c43334c0b.jpeg')
+            
+            hr
+                width: 90%
+                margin: 0.5rem auto
+                height: 2px
+
+            .second_user
+                .pic
+                    background-image: url('#{imgPath}/801d5013ae729a41bc1930fff970ad14.jpeg')
+    @media screen and (min-width: 760px)
+        .columns
+            height: 626px /* 70% - 24px */
+            margin: 0.2rem 0.8rem 0 -15.2rem
+            .column
+                margin-left: 4rem
+                font-size: 32px
+                .col
+                    width: 60px
+                    height: 400px
+                    ._col
+                        width: 60px 
+                .date
+            .four
+                .col
+                    ._col
+                        height: 248px
+            .five
+                .col
+                    ._col
+                        height: 326px
+            .six
+                .col
+                    ._col
+                        height: 300px
+            .seven
+                .black
+                    font-size: 32px
+                .col
+                    .gold
+                        width: 60px 
+                        height: 382px
+                        margin-bottom: 0
+            .eight
+                .col
+                    ._col
+                        height: 40px
+            .nine
+                .col
+                    ._col
+                        height: 40px
+        .users
+            padding-bottom: 0.5rem
+            .user
+                margin-left: -3rem
+                align-items: flex-start
+                .pic
+                    width: 76px
+                    height: 76px
+                    border-radius: 50%
+                    margin-top: 0.6rem
+                    margin-right: 0.5rem
+
+                .info_wrap
+                    margin-left: 0.2rem
+                    align-items: flex-start 
+                    font-size: 32px
+                    #name
+                        margin-top: 0.5rem
+                        margin-left: 0
+                        margin-bottom: 0.5rem
+            
+            .first_user
+                margin-bottom: -0.5rem
+
+    @media screen and (min-width: 1900px)
+        .columns
+            height: 706px /* 70% - 24px */
+            margin: 1rem 2rem 0 2rem
+            .column
+                .num
+                    font-size: 34px
+                .col
+                    width: 70px
+                    height: 400px
+                    ._col
+                        width: 70px 
+                .date
+                    font-size: 34px
+            .first
+                .col
+                    ._col
+                        height: 285px
+            .second
+                .col
+                    ._col
+                        height: 315px
+            .third
+                .col
+                    ._col
+                        height: 310px
+            .four
+                .col
+                    ._col
+                        height: 198px
+            .five
+                .col
+                    ._col
+                        height: 326px
+            .six
+                .col
+                    ._col
+                        height: 210px
+            .seven
+                .black
+                    font-size: 34px
+                .col
+                    .gold
+                        width: 70px 
+                        height: 382px
+            .eight
+                .col
+                    ._col
+                        height: 60px
+            .nine
+                .col
+                    ._col
+                        height: 60px
+        .users
+            width: 80%
+            margin: 0.5rem auto
+            .user
+                justify-content: center
+                .pic
+                    width: 96px
+                    height: 96px
+                    border-radius: 50%
+                    margin-right: 1.5rem
+
+                .info_wrap
+                    margin-left: 0.5rem
+                    #name
+                        font-size: 34px
+                        margin-top: 0.3rem
+                        margin-bottom: 0.5rem
+                    #age
+                        font-size: 34px
+            
+            .first_user
+                margin-left: 1rem
+
+.users_light
+        hr
+            background-color: #261C00
+        .user
+            .info_wrap
+                #name
+                    color: #261C00
+                #age
+                    color: #BFBFBF
+
+.users_dark
+        hr
+            background-color: white
+        .user
+            .pic
+                filter: grayscale(100%)
+            .info_wrap
+                #name
+                    color: white
+                #age
+                    color: #918F8A
+
+.columns_light
+    .column
+        .num
+            color: #BFBFBF
+        .col
+            ._col
+                background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+            .gold
+                background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
+        .seven
+            .black
+                color: #261C00
+        .num, .date
+            color: #BFBFBF
+
+.columns_dark
+    .column
+        .col
+            ._col
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 93.3% at 38.75% 72.1%, #000000 0%, #231900 0.01%, #4D4D4D 100%)
+            .gold   
+                background: radial-gradient(81.14% 100% at 50% 0%, #FFA300 0%, #2D1C00 100%)
+        .seven
+            .black
+                color: white
+        .num, .date
+            color: #918F8A
+
+
+@media screen and (min-width: 1024px) and (max-height: 768px) and (orientation: landscape)
+    /* horizontal */
+    #chart_h1
+        font-size: 48px
+        margin-top: 0.5rem
+        text-align: center
+    #chart_p
+        font-size: 28px
+        text-align: center
+        color: #BFBFBF
+
+    .columns
+        width: 95%
+        height: 506px /* 70% - 24px */
+        margin: 1rem 1.5rem 0 1.5rem
+        .column
+            align-items: center
+            .num
+                font-size: 24px
+            .col
+                width: 50px
+                height: 300px
+                ._col
+                    width: 50px 
+            .date
+                font-size: 24px
+        .first
+            .col
+                ._col
+                    height: 235px
+        .second
+            .col
+                ._col
+                    height: 255px
+        .third
+            .col
+                ._col
+                    height: 260px
+        .four
+            .col
+                ._col
+                    height: 148px
+        .five
+            .col
+                ._col
+                    height: 266px
+        .six
+            .col
+                ._col
+                    height: 130px
+        .seven
+            .black
+                font-size: 24px
+            .col
+                .gold
+                    width: 50px  
+                    height: 282px
+                    justify-content: flex-end
+        .eight
+            .num
+                opacity: 0
+            .col
+                ._col
+                    height: 30px
+        .nine
+            .num
+                opacity: 0
+            .col
+                ._col
+                    height: 30px
+
+    
+    .users
+        width: 80%
+        margin: 0.5rem auto
+        padding-bottom: 0.5rem
+        .user
+            display: flex
+            justify-content: center
+            .pic
+                width: 76px
+                height: 76px
+                border-radius: 50%
+                margin-right: 0.5rem
+
+            .info_wrap
+                margin-left: 0.5rem
+                #name
+                    font-size: 24px
+                    margin-top: 0.2rem
+                    margin-bottom: 0.5rem
+                #age
+                    font-size: 20px
+        
+        .first_user
+            margin-left: 1rem
+            .pic
+                background-image: url('../../img/img_leaders/3119ecea1e114df95ec64c5c43334c0b.jpeg')
+        .second_user
+            .pic
+                background-image: url('../../img/img_leaders/801d5013ae729a41bc1930fff970ad14.jpeg')
+
+@media screen and (min-width: 1366px) and (max-width: 1890px)
+    /* horizontal */
+    #chart_h1
+        font-size: 48px
+        text-align: center 
+    #chart_p
+        font-size: 32px
+        margin-top: -1rem
+        text-align: center
+
+    .columns
+        width: 95%
+        height: 576px /* 70% - 24px */
+        margin: -3rem 1.5rem 0 1.5rem
+        .column
+            align-items: center
+            .num
+                font-size: 28px
+            .col
+                width: 60px
+                height: 400px
+                ._col
+                    width: 60px 
+            .date
+                font-size: 28px
+        .first
+            .col
+                ._col
+                    height: 285px
+        .second
+            .col
+                ._col
+                    height: 315px
+        .third
+            .col
+                ._col
+                    height: 310px
+        .four
+            .col
+                ._col
+                    height: 198px
+        .five
+            .col
+                ._col
+                    height: 316px
+        .six
+            .col
+                ._col
+                    height: 210px
+        .seven
+            .black
+                font-size: 28px
+            .col
+                .gold
+                    width: 60px 
+                    height: 382px
+        .eight
+            .num
+                opacity: 0
+            .col
+                ._col
+                    height: 50px
+        .nine
+            .num
+                opacity: 0
+            .col
+                ._col
+                    height: 50px
+
+    
+    .users
+        width: 80%
+        margin: -1rem auto
+        padding-bottom: 0.5rem
+        .user
+            display: flex
+            justify-content: center
+            .pic
+                width: 86px
+                height: 86px
+                border-radius: 50%
+                margin-right: 0.5rem
+
+            .info_wrap
+                margin-left: 1rem
+                #name
+                    font-size: 28px
+                    margin-top: 0.2rem
+                    margin-bottom: 0.5rem
+                #age
+                    font-size: 28px
+        
+        .first_user
+            margin-left: 1rem
+            .pic
+                background-image: url('../../img/img_leaders/3119ecea1e114df95ec64c5c43334c0b.jpeg')
+        .second_user
+            .pic
+                background-image: url('../../img/img_leaders/801d5013ae729a41bc1930fff970ad14.jpeg')
+
+@media screen and (min-width: 1920px) 
+    /* horizontal */
+    #chart_h1
+        font-size: 56px
+        margin-top: 1.5rem
+        text-align: center
+    #chart_p
+        font-size: 42px
+        text-align: center
+
+    
+
+    
+    .users
+        width: 80%
+        margin: 0.5rem auto
+        .user
+            display: flex
+            justify-content: center
+            .pic
+                width: 96px
+                height: 96px
+                border-radius: 50%
+                margin-right: 1.5rem
+
+            .info_wrap
+                margin-left: 0.5rem
+                #name
+                    font-size: 34px
+                    margin-top: 0.3rem
+                    margin-bottom: 0.5rem
+                #age
+                    font-size: 34px
+        
+        .first_user
+            margin-left: 1rem
+            .pic
+                background-image: url('../../img/img_leaders/3119ecea1e114df95ec64c5c43334c0b.jpeg')
+        .second_user
+            .pic
+                background-image: url('../../img/img_leaders/801d5013ae729a41bc1930fff970ad14.jpeg')

@@ -1,14 +1,4 @@
-.leaders 
-    margin: 0
-    padding: 0
-    width: 100%
-
-    .leaders_h2                   
-       width: 70%
-        
-    .leaders_p 
-       width: 70% 
-
+.container
     .winners 
         display: flex
         width: 100%
@@ -257,71 +247,61 @@
                     #num5
                         margin-right: 13%
 
-.theme_light 
-    background-color: white
-    .p_light
-        color: #BFBFBF
+.leaders_light
+    .winner_item
+        .wrapper
+            p
+                color: rgb(38, 28, 0, 1)
+            #age
+                color: #BFBFBF
 
-    .leaders_light
-        .winner_item
-            .wrapper
-                p
-                    color: rgb(38, 28, 0, 1)
-                #age
-                    color: #BFBFBF
+        .win_place
+            color: #261C00
+    #item1
+        .place_1
+            background: $gradientLight1
+    #item2 
+        .place_2
+            background: $gradientLight2
+    #item3 
+        .place_3
+            background: $gradientLight3
+    #item4
+        .place_4
+            background: $gradientLight4
+    #item5
+        .place_5
+            background: $gradientLight5
 
-            .win_place
-                color: #261C00
-        #item1
-            .place_1
-                background: $gradientLight1
-        #item2 
-            .place_2
-                background: $gradientLight2
-        #item3 
-            .place_3
-                background: $gradientLight3
-        #item4
-            .place_4
-                background: $gradientLight4
-        #item5
-            .place_5
-                background: $gradientLight5
-
-.theme_dark
-    background: $darkTheme
-    .h2_dark
-        color: white
-    .p_dark
-        color: #918F8A
-
-    .leaders_dark
-        .winner_item
-            .wrapper
-                .pic
-                    filter: grayscale(100%)
-                p
-                    color: white
-                #age
-                    color: #918F8A
-
-            .win_place
+.leaders_dark
+    .winner_item
+        .wrapper
+            .pic
+                filter: grayscale(100%)
+            p
                 color: white
-        #item1
-            .place_1 
-                background: $gradientDark1
-        #item2 
-            .place_2
-                background: $gradientDark2
-        #item3 
-            .place_3
-                background: $gradientDark3
-        #item4
-            .place_4
-                background: $gradientDark4
-        #item5
-            .place_5
-                background: $gradientDark5
+            #age
+                color: #918F8A
+        .win_place
+            color: white
+
+    #item1
+        .place_1 
+            background: $gradientDark1
+    #item2 
+        .place_2
+        background: $gradientDark2
+    #item3 
+        .place_3
+            background: $gradientDark3
+    #item4
+        .place_4
+            background: $gradientDark4
+    #item5
+        .place_5
+            background: $gradientDark5
+
+    
 
 
                 

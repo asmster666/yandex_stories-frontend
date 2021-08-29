@@ -4,7 +4,7 @@ import VoteUser from './voteUser/voteUser';
 
 const Vote = () => {
 
-    let alias = "leaders";
+    let alias = "leaders"; 
     let data = {};
 
     let vote = ResponseWork(alias, data);
