@@ -27,12 +27,33 @@
         
         .line :nth-child(2n + 2) 
             margin: 0
+    
+    @media screen and (min-width: 319px)
+        .grid 
+            height: 454px
+            margin: 3rem auto
+            padding: 0 0.8rem 0 0.8rem
+
+            .column 
+                margin-left: 0.05rem
+                width: 12.86%
+                height: auto
+                display: flex
+                flex-direction: column
+
+                .cell
+                    height: 19% 
+            
+            .column :nth-child(2n + 2) 
+                margin: -0.9rem 0 -0.9rem 1.2rem
+
+    @media screen and (min-width: 760px)
+
+    @media screen and (min-width: 1900px)
 
 .addition 
     flex-direction: column
 
-.theme_light
-.theme_dark
 .activity_light
     .wrap   /* 5-6 cell */
         #big_cell 
@@ -269,50 +290,3 @@
             position: absolute
             z-index: -1
 
-@media screen and (max-width: 320px)
-    #grid 
-        height: 454px
-        margin: 3rem auto
-        padding: 0 0.8rem 0 0.8rem
-
-        .column 
-            margin-left: 0.05rem
-            width: 12.86%
-            height: auto
-            display: flex
-            flex-direction: column
-
-            .cell
-                height: 19% 
-        
-        .column :nth-child(2n + 2) 
-            margin: -0.9rem 0 -0.9rem 1.2rem
-
-@media screen and (min-width: 568px) and (max-height: 320px) and (orientation: landscape)
-    #grid
-        height: 234px
-        margin: 3rem auto
-
-    #grid :nth-child(2n + 2) 
-        margin: -3rem 1.3rem -3rem 1.3rem   /* diffrent */
-
-        .activeGrid  
-            height: 234px
-            margin: 3rem auto      
-            .line 
-                height: 40px
-                .wrap, .wrap2, .wrap3, .wrap4 
-                    width: 15px
-                    height: 35px
-
-@media screen and (min-width: 321px) and (max-width: 414px)
-
-@media screen and (min-width: 736px) and (max-height: 414px) and (orientation: landscape)
-
-@media screen and (min-width: 768px) and (max-device-width : 1024px) and (orientation: portrait)
-
-@media screen and (min-width: 1024px) and (max-device-height : 768px) and (orientation: landscape)
-
-@media screen and (min-width: 1366px) and (max-width: 1890px)
-
-@media screen and (min-width: 1920px)
