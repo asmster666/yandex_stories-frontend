@@ -17,7 +17,7 @@ const Chart = () => {
             className={`chart container ${lightTheme ? "theme_light" : "theme_dark"}`}
             onClick={() => toggleTheme(!lightTheme)}
         >
-            <h1 className={`h2_styles ${lightTheme ? '' : 'h2_dark'}`}>Коммиты{chart.title}</h1>
+            <h2 className={`h2_styles ${lightTheme ? '' : 'h2_dark'}`}>Коммиты{chart.title}</h1>
             <p className={`p_styles ${lightTheme ? 'p_light' : 'p_dark'}`}>Спринт № 213{chart.subtitle}</p>
 
             <div className={`columns ${lightTheme ? "columns_light" : "columns_dark"}`}>

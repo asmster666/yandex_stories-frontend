@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ResponseWork from '../../../response_work';
+import './activity.sass';
 
 const Activity = ({ dataPerDayOfWeek } ) => {
 
@@ -30,14 +31,14 @@ const Activity = ({ dataPerDayOfWeek } ) => {
     });   // check it works as componentdidupdate
 
     return (
-        <div id="activity"
-            className={lightTheme ? "theme_light" : "theme_dark"}
+        <div
+            className={`activity container ${lightTheme ? "theme_light" : "theme_dark"}`}
             onClick={() => toggleTheme(!lightTheme)}
         >
-            <h1 id="activity_h1">{activity.title}</h1>
-            <p id="activity_p">{activity.subtitle}</p>
+            <h2 className={`h2_styles ${lightTheme ? '' : 'h2_dark'}`}>{activity.title}</h2>
+            <p className={`p_styles ${lightTheme ? 'p_light' : 'p_dark'}`}>{activity.subtitle}</p>
 
-            <div id="grid"></div> 
+            <div className="grid"></div> 
         </div>
     )
 }

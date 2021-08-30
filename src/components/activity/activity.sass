@@ -1,0 +1,292 @@
+.grid 
+    width: 90%
+    border: 1px solid black
+    display: flex
+
+    .activeGrid
+        width: 100%
+
+        .column 
+            width: 12.86%
+            height: auto
+            display: flex 
+
+            .cell 
+                display: flex
+            
+            .cell :nth-child(2n + 2) 
+                margin: 0
+
+        .line, .del_wrap2
+            width: 100%
+            display: flex
+
+            .cell 
+                display: flex
+            
+        
+        .line :nth-child(2n + 2) 
+            margin: 0
+    
+    @media screen and (min-width: 319px)
+        .grid 
+            height: 454px
+            margin: 3rem auto
+            padding: 0 0.8rem 0 0.8rem
+
+            .column 
+                margin-left: 0.05rem
+                width: 12.86%
+                height: auto
+                display: flex
+                flex-direction: column
+
+                .cell
+                    height: 19% 
+            
+            .column :nth-child(2n + 2) 
+                margin: -0.9rem 0 -0.9rem 1.2rem
+
+    @media screen and (min-width: 760px)
+
+    @media screen and (min-width: 1900px)
+
+.addition 
+    flex-direction: column
+
+.activity_light
+    .wrap   /* 5-6 cell */
+        #big_cell 
+            width: inherit
+            height: inherit
+            background: $cellLightBig1
+            box-shadow: $cellLightBigShadow1
+            filter: blur(1px)
+            clip-path: polygon(0% 22%, 35% 0%, 70% 22%, 35% 44%)
+            position: absolute
+            z-index: 5
+        #lil_cell 
+            width: inherit
+            height: inherit
+            background: $cellLightLil11
+            box-shadow: $cellLightLilShadow11
+            border-radius: 4px 
+            clip-path: polygon(0% 22%, 35% 0%, 70% 22%, 70% 78%, 35% 100%, 0% 78%)
+            position: absolute
+            z-index: 3
+        #lil_cell_2 
+            width: inherit
+            height: inherit
+            background: $cellLightLil12
+            box-shadow: $cellLightLilShadow12
+            border-radius: 2px
+            clip-path: polygon(35% 0%, 70% 22%, 70% 78%, 35% 100%)
+            position: absolute
+            z-index: 4
+    .wrap3   /* 3-4 cell */
+        #big_cell3 
+            width: inherit
+            height: inherit 
+            background: $cellLightBig2
+            box-shadow: $cellLightBigShadow2 
+            filter: blur(1px)
+            clip-path: polygon(0% 40%, 35% 18%, 70% 40%, 35% 62%)
+            position: absolute
+            z-index: 5
+        #lil_cell3 
+            width: inherit
+            height: inherit
+            background: $cellLightLil21
+            box-shadow: $cellLightLilShadow21
+            border-radius: 4px 
+            clip-path: polygon(0% 40%, 35% 18%, 70% 40%, 70% 78%, 35% 100%, 0% 78%)
+            position: absolute
+            z-index: 3
+        #lil_cell_23 
+            width: inherit
+            height: inherit
+            background: $cellLightLil22
+            box-shadow: $cellLightLilShadow22
+            border-radius: 2px
+            clip-path: polygon(35% 18%, 70% 40%, 70% 78%, 35% 100%)
+            position: absolute
+            z-index: 4
+    .wrap2  /* 1-2 cell */
+        #big_cell2 
+            width: inherit
+            height: inherit 
+            background: $cellLightBig3
+            box-shadow: $cellLightBigShadow3
+            filter: blur(1px)
+            clip-path: polygon(0% 55%, 35% 33%, 70% 55%, 35% 77%)
+            position: absolute
+            z-index: 1
+        #lil_cell2 
+            width: inherit
+            height: inherit
+            background: $cellLightLil31
+            box-shadow: $cellLightLilShadow31
+            border-radius: 4px 
+            clip-path: polygon(0% 55%, 35% 33%, 70% 55%, 70% 78%, 35% 100%, 0% 78%)
+            position: absolute
+            z-index: -3
+        #lil_cell_22 
+            width: inherit
+            height: inherit
+            background: $cellLightLil32
+            box-shadow: $cellLightLilShadow32
+            border-radius: 2px
+            clip-path: polygon(35% 33%, 70% 55%, 70% 78%, 35% 100%)
+            position: absolute
+            z-index: -1
+    .wrap4  /* 0 cell */
+        #big_cell4 
+            width: inherit
+            height: inherit 
+            background: $cellLightBig4
+            box-shadow: $cellLightBigShadow4
+            filter: blur(1px)
+            clip-path: polygon(0% 68%, 35% 46%, 70% 68%, 35% 88%)
+            position: absolute
+            z-index: 1
+        #lil_cell4 
+            width: inherit
+            height: inherit
+            background: $cellLightLil41
+            box-shadow: $cellLightLilShadow41
+            border-radius: 2px 
+            clip-path: polygon(0% 68%, 35% 46%, 70% 68%, 70% 78%, 35% 100%, 0% 78%)
+            position: absolute
+            z-index: -3
+        #lil_cell_24 
+            width: inherit
+            height: inherit
+            background: $cellLightLil42
+            box-shadow: $cellLightLilShadow42
+            filter: blur(2px)
+            clip-path: polygon(35% 46%, 70% 68%, 70% 78%, 35% 100%)
+            position: absolute
+            z-index: -1
+
+.activity_dark
+    .wrap  /* 5-6 cell */
+        width: 50px
+        height: 70px
+        #big_cell 
+            width: inherit
+            height: inherit
+            background: $cellDarkBig1
+            box-shadow: $cellDarkBigShadow1
+            filter: blur(1px)
+            clip-path: polygon(0% 22%, 35% 0%, 70% 22%, 35% 44%)
+            position: absolute
+            z-index: 5
+        #lil_cell 
+            width: inherit
+            height: inherit
+            background: $cellDarkLil11
+            box-shadow: $cellDarkLilShadow11
+            clip-path: polygon(0% 22%, 35% 0%, 70% 22%, 70% 78%, 35% 100%, 0% 78%)
+            position: absolute
+            z-index: 3
+        #lil_cell_2 
+            width: inherit
+            height: inherit
+            background: $cellDarkLil12
+            box-shadow: $cellDarkLilShadow12
+            filter: blur(4px)
+            border-radius: 2px
+            clip-path: polygon(35% 0%, 70% 22%, 70% 78%, 35% 100%)
+            position: absolute
+            z-index: 4
+    .wrap3  /* 3-4 cell */
+        width: 50px
+        height: 70px
+        #big_cell3 
+            width: inherit
+            height: inherit 
+            background: $cellDarkBig2
+            box-shadow: $cellDarkBigShadow2 
+            clip-path: polygon(0% 40%, 35% 18%, 70% 40%, 35% 62%)
+            position: absolute
+            z-index: 5
+        #lil_cell3 
+            width: inherit
+            height: inherit
+            background: $cellDarkLil21
+            box-shadow: $cellDarkLilShadow21
+            clip-path: polygon(0% 40%, 35% 18%, 70% 40%, 70% 78%, 35% 100%, 0% 78%)
+            position: absolute
+            z-index: 3
+        #lil_cell_23 
+            width: inherit
+            height: inherit
+            background: $cellDarkLil22
+            box-shadow: $cellDarkLilShadow22
+            filter: blur(5px)
+            border-radius: 2px
+            clip-path: polygon(35% 18%, 70% 40%, 70% 78%, 35% 100%)
+            position: absolute
+            z-index: 4
+    .wrap2  /* 1-2 cell */
+        width: 50px
+        height: 70px
+        #big_cell2 
+            width: inherit
+            height: inherit 
+            background: $cellDarkBig3
+            box-shadow: $cellDarkBigShadow3
+            filter: blur(1px)
+            clip-path: polygon(0% 55%, 35% 33%, 70% 55%, 35% 77%)
+            position: absolute
+            z-index: 1
+        #lil_cell2 
+            width: inherit
+            height: inherit
+            background: $cellDarkLil31
+            box-shadow: $cellDarkLilShadow31
+            border-radius: 4px 
+            clip-path: polygon(0% 55%, 35% 33%, 70% 55%, 70% 78%, 35% 100%, 0% 78%)
+            position: absolute
+            z-index: -3
+        #lil_cell_22 
+            width: inherit
+            height: inherit
+            background: $cellDarkLil32
+            box-shadow: $cellDarkLilShadow32
+            filter: blur(2px)
+            border-radius: 2px
+            clip-path: polygon(35% 33%, 70% 55%, 70% 78%, 35% 100%)
+            position: absolute
+            z-index: -1
+    .wrap4  /* 0 cell */
+        width: 50px
+        height: 70px
+        #big_cell4 
+            width: inherit
+            height: inherit 
+            background: $cellDarkBig4
+            box-shadow: $cellDarkBigShadow4
+            clip-path: polygon(0% 68%, 35% 46%, 70% 68%, 35% 88%)
+            position: absolute
+            z-index: 1
+        #lil_cell4 
+            width: inherit
+            height: inherit
+            background: $cellDarkLil41
+            box-shadow: $cellDarkLilShadow41
+            border-radius: 2px 
+            clip-path: polygon(0% 68%, 35% 46%, 70% 68%, 70% 78%, 35% 100%, 0% 78%)
+            position: absolute
+            z-index: -3
+        #lil_cell_24 
+            width: inherit
+            height: inherit
+            background: $cellDarkLil42
+            box-shadow: $cellDarkLilShadow42
+            border-radius: 2px
+            filter: blur(2px)
+            clip-path: polygon(35% 46%, 70% 68%, 70% 78%, 35% 100%)
+            position: absolute
+            z-index: -1
+
