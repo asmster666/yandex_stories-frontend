@@ -14,12 +14,12 @@ const Diagram = () => {
     const [lightTheme, toggleTheme] = useState(false);
 
     return (
-        <div id="diagram"
-            className={lightTheme ? "theme_light" : "theme_dark"}
+        <div
+            className={`container ${lightTheme ? "theme_light" : "theme_dark"}`}
             onClick={() => toggleTheme(!lightTheme)}
         >
-            <h1 id="diagram_h1">{diagram.title}</h1>
-            <p id="diagram_p">{diagram.subtitle}</p> 
+            <h2 className={`h2_styles ${lightTheme ? '' : 'h2_dark'}`}>{diagram.title}</h2>
+            <p className={`p_styles ${lightTheme ? 'p_light' : 'p_dark'}`}>{diagram.subtitle}</p> 
 
             <div className="diagram">
                 {
