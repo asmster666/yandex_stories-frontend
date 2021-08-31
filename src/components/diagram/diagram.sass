@@ -1,0 +1,292 @@
+.container
+
+    .diagram
+        width: 90%
+        margin: 1rem auto  
+        .out_circle
+            .first_piece, .second_piece, .third_piece, .forth_piece
+                position: absolute
+                .side_part 
+                    position: absolute
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+                    border-top-left-radius: 6px
+                    border-bottom-left-radius: 6px
+                .color_cov
+                    border-radius: 50%
+                .round_part
+                    position: absolute
+                    border: 2px solid transparent
+                    border-radius: 50%
+            .first_piece
+                .color_cov, .round_part
+                    clip-path: polygon(0% 50%, 50% 50%, 50% 0%, 0% 0%)
+
+            .second_piece
+                .color_cov, .round_part
+                    clip-path: polygon(100% 50%, 50% 50%, 50% 0%, 100% 0%)
+
+            .third_piece
+                .color_cov, .round_part
+                    clip-path: polygon(50% 100%, 50% 50%, 100% 50%, 100% 100%)
+
+            .forth_piece
+                .color_cov, .round_part
+                    clip-path: polygon(50% 100%, 50% 50%, 0% 50%, 0% 100%)
+                
+        .white_circle
+            background-color: white
+            border-radius: 50%
+            position: absolute
+            .center
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+        
+    .stat
+        display: flex
+        flex-direction: column
+        .stat_item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .color 
+                border-radius: 50%
+            .str
+                font-weight: bold
+            .count_wrap
+                display: flex
+    
+    @media screen and (min-width: 319px)
+        .diagram
+            height: 390px
+
+            .out_circle
+                margin: 1rem auto
+                .first_piece, .second_piece, .third_piece, .forth_piece
+                    .side_part 
+                        width: 5px
+                        height: 59px
+                    .color_cov, .round_part 
+                        width: 390px
+                        height: 390px
+
+                .first_piece
+                    .left 
+                        margin-top: 2.2rem
+                        margin-left: 6.2rem
+                        transform: rotate(-37deg)
+                    .right 
+                        margin-top: 1.7rem
+                        margin-left: 17.5rem
+                        transform: rotate(210deg)
+                    
+                .second_piece 
+                    .left 
+                        margin-top: 2rem
+                        margin-left: 18rem
+                        transform: rotate(34deg)
+                    .right 
+                        margin-top: 12.4rem
+                        margin-left: 22.15rem
+                        transform: rotate(280deg)
+                
+                .third_piece 
+                    .left 
+                        margin-top: 18.6rem
+                        margin-left: 6.6rem
+                        transform: rotate(-143deg)
+                    .right 
+                        margin-top: 3rem
+                        margin-left: 5.1rem
+                        transform: rotate(130deg)
+                
+                .forth_piece 
+                    .left 
+                        margin-top: 19.3rem
+                        margin-left: 7.9rem
+                        transform: rotate(27deg)
+                    .right 
+                        margin-top: 13.4rem
+                        margin-left: 21.75rem
+                        transform: rotate(108deg)
+
+
+            .white_circle
+                width: 273px
+                height: 273px
+                margin: 3.8rem 0 0 3.8rem
+                .center
+                    width: 80%
+                    margin: 3rem auto
+                    h1
+                        font-size: 28px
+                        margin-left: 0
+                    p
+                        font-size: 22px
+        
+        .stat
+            width: 90%
+            margin: 1.5rem auto
+            padding-bottom: 0.5rem
+            .stat_item
+                width: 100%
+                margin: 0.2rem auto
+                .color  
+                    width: 18px
+                    height: 18px
+                    margin-top: -0.4rem
+                
+                .str
+                    font-size: 20px
+                    padding: 0 0 0 0.5rem
+                    width: 60%
+                    margin-bottom: 0.5rem
+
+                .count_wrap
+                    width: 10%
+                    .counter 
+                        font-size: 20px
+                    .c_1
+                        margin-right: 0.5rem
+                        margin-left: -1.5rem
+                    .c_2
+                        margin-right: 0.2rem
+                
+            hr
+                width: 375px
+                margin: 0.5 auto
+
+    @media screen and (min-width: 760px)
+        .diagram
+            height: 610px
+
+            .out_circle
+                margin: -1rem auto
+                .first_piece, .second_piece, .third_piece, .forth_piece
+                    .side_part 
+                        height: 91px
+                    .color_cov, .round_part  
+                        width: 610px
+                        height: 610px
+
+            .white_circle
+                width: 427px
+                height: 427px
+                margin: 6rem 0 0 6rem
+                
+        
+        .stat
+            .stat_item
+                margin: 0.5rem auto
+                .color  
+                    width: 28px
+                    height: 28px
+                
+                .str
+                    font-size: 30px
+
+                .count_wrap
+                    .counter 
+                        font-size: 30px
+                
+            hr
+                width: 704px
+
+.theme_light
+    .stat
+        .stat_item
+            .str
+                color: #261C00
+            .count_wrap
+                .counter 
+                    color: #BFBFBF
+        .first
+            background: $diagramLight1
+            box-shadow: $diagramShadowLight1
+        .second
+            background: $diagramLight2
+            box-shadow: $diagramShadowLight2
+        .third
+            background: $diagramLight3
+            box-shadow: $diagramShadowLight3
+        .forth
+            background: $diagramLight4
+            box-shadow: $diagramShadowLight4
+
+.theme_dark
+    .stat
+        .stat_item
+            .str
+                color: white
+            .count_wrap
+                .counter 
+                    color: #918F8A
+        .first
+            background: $diagramDark1
+            box-shadow: $diagramShadowDark1
+        .second
+            background: $diagramDark2
+            box-shadow: $diagramShadowDark2
+        .third
+            background: $diagramDark3
+            box-shadow: $diagramShadowDark3
+        .forth
+            background: $diagramDark4
+            box-shadow: $diagramShadowDark4
+
+.diagram_light 
+    background-color: white
+    .out_circle          
+        .class_color1
+            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
+        .side_part1
+            background-color: rgba(255, 184, 0, 0.56)
+        .round_part1
+            border-color: rgba(255, 239, 153, 0.42) 
+                
+        .class_color2
+            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
+        .side_part2
+            background: rgba(255, 184, 0, 0.24)
+        .round_part2
+            border-color: rgba(255, 239, 153, 0.22)
+                
+        .class_color3
+            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.3725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
+        .side_part3
+            background-color: rgba(166, 166, 166, 0.3725)
+        .round_part3
+            border-color: rgba(203, 203, 203, 0.1)
+                
+        .class_color4
+            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
+        .side_part4
+            background-color: rgba(191, 191, 191, 0.445)
+        .round_part4
+            border-color: rgba(228, 228, 228, 0.2)
+               
+.diagram_dark
+    .out_circle
+        .class_color1
+            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 163, 0, 0.8) 71.88%, rgba(91, 58, 0, 0.8) 100%)
+            box-shadow: 0px 0px 20px -8px rgba(248, 158, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 162, 0, 0.9)
+        .class_color2
+            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(99, 63, 0, 0.5) 72.92%, rgba(15, 9, 0, 0.5) 100%)
+            box-shadow: 0px 0px 20px -8px rgba(147, 93, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(202, 129, 0, 0.9)
+        .class_color3
+            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(155, 155, 155, 0.5) 71.88%, rgba(56, 41, 0, 0.5) 100%)
+            box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(139, 139, 139, 0.9)
+        .class_color4
+            background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(77, 77, 77, 0.5) 71.88%, rgba(56, 41, 0, 0.5) 100%)
+            box-shadow: 0px 0px 20px -8px rgba(96, 96, 96, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(38, 38, 38, 0.9)  
+
+
+
+
+
+
+
+
+                
+    
